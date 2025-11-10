@@ -1,6 +1,6 @@
 # 🇫🇷 Politique de Confidentialité — Chihiro [IA]
 
-*Dernière mise à jour : 4 novembre 2025*
+*Dernière mise à jour : 10 novembre 2025*
 
 ## Quelles données collectons-nous ?
 
@@ -9,7 +9,7 @@ Chihiro \[IA] est un bot persistant. Pour fonctionner, il a besoin de sauvegarde
 * **Informations d'identification Discord :** Votre ID Discord d'utilisateur est utilisé comme clé unique pour lier toutes vos données de jeu.
 * **Données du Tamagotchi :** L'état actuel de votre Chihiro, incluant vos jauges (Espoir, Faim), vos Monocoins, votre statut (éveillé/endormi) et votre inventaire.
 * **Données de Progression :** Vos statistiques à long terme, comme le nombre de morts de Chihiro, votre maximum de Monocoins, et vos scores (parties jouées/gagnées) dans les mini-jeux.
-* **Données de Courrier :** Le contenu des messages, les sujets, et les informations sur les pièces jointes (objets/Monocoins) que vous envoyez via la commande `/mail write`.
+* **Données de Courrier :** Le contenu des messages, les sujets, et les informations sur les pièces jointes (objets/Monocoins) que vous envoyez via la commande `/mail écrire`.
 * **Données d'Utilisation :** Le bot enregistre les erreurs et l'utilisation des commandes pour le débogage. Ces logs peuvent inclure votre ID utilisateur pour nous aider à résoudre les problèmes.
 
 ## Comment vos données sont-elles stockées et sécurisées ?
@@ -24,7 +24,7 @@ Toutes les données sont stockées dans une base de données locale (`chihiro.db
 
 Vous avez **partiellement** le contrôle de vos données :
 
-* **Données de Courrier :** Vous pouvez supprimer vos mails reçus ou envoyés en utilisant les options du menu déroulant dans la commande `/mail box` ou via `/mail delete`.
+* **Données de Courrier :** Vous pouvez supprimer vos mails reçus ou envoyés en utilisant les options du menu déroulant dans la commande `/mail box` ou via `/mail supprimer`.
 * **Suppression Totale :** Vous pouvez demander la suppression complète de **toutes** vos données (Tamagotchi, inventaire, statistiques, mails) en contactant le développeur.
 
 ## Comment me contacter ?
@@ -74,3 +74,4 @@ If you have any questions about this privacy policy or wish to exercise your rig
 
 ---
 *By adding and using the Chihiro [AI] bot, you consent to the collection and use of your data as described in this policy.*
+
