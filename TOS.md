@@ -1,10 +1,10 @@
 # 🇫🇷 Conditions d'Utilisation — Chihiro [IA]
 
-*Dernière mise à jour : 4 novembre 2025*
+*Dernière mise à jour : 10 novembre 2025*
 
 ## 1\. Acceptation des Conditions
 
-En invitant ou en interagissant avec le bot Discord "Chihiro \[IA]", vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la [Politique de Confidentialité](https://www.google.com/search?q=./PRIVACY.md) associée. Vous acceptez également de respecter les [Conditions d'Utilisation de Discord](https://discord.com/terms).
+En invitant ou en interagissant avec le bot Discord "Chihiro \[IA]", vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la [Politique de Confidentialité](https://github.com/Kitsoune/Chihiro-IA-Docs/blob/main/PRIVACY.md) associée. Vous acceptez également de respecter les [Conditions d'Utilisation de Discord](https://discord.com/terms).
 
 Si vous n'êtes pas d'accord avec l'une de ces conditions, veuillez cesser d'utiliser le bot et le retirer de votre serveur.
 
@@ -30,13 +30,13 @@ Pour toute question ou préoccupation relative à ces conditions ou au bot, veui
 
 ---
 
-# 🇬🇧 Terms of Service — Chihiro [AI]
+# 🇺🇸 Terms of Service — Chihiro [AI]
 
-*Last Updated: November 4, 2025*
+*Last Updated: November 10, 2025*
 
 ## 1. Acceptance of Terms
 
-By inviting or interacting with the Discord bot "Chihiro [AI]", you acknowledge that you have read, understood, and agree to be bound by these entire Terms of Service, as well as the associated [Privacy Policy](https://www.google.com/search?q=./PRIVACY.md). You also agree to comply with the [Discord Terms of Service](https://discord.com/terms).
+By inviting or interacting with the Discord bot "Chihiro [AI]", you acknowledge that you have read, understood, and agree to be bound by these entire Terms of Service, as well as the associated [Privacy Policy](https://github.com/Kitsoune/Chihiro-IA-Docs/blob/main/PRIVACY.md). You also agree to comply with the [Discord Terms of Service](https://discord.com/terms).
 
 If you do not agree with any of these terms, please cease using the bot and remove it from your server.
 
@@ -59,3 +59,4 @@ Chihiro [AI] is an unofficial fan project provided "as is" for entertainment pur
 For any questions or concerns regarding these terms or the bot, please contact the developer:
 
 **@xkitsoune** (ID: `437953038666170388`)
+
