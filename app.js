@@ -377,15 +377,35 @@ function renderLegalDoc() {
 }
 
 function setupEventListeners() {
-  // Language Button
-  const langToggle = document.getElementById('lang-toggle');
-  langToggle.addEventListener('click', () => {
-    currentLang = (currentLang === 'fr' ? 'en' : 'fr');
-    langToggle.innerHTML = (currentLang === 'fr' ? '🇫🇷 FR' : '🇺🇸 EN');
+  // Dual Language Buttons (FR / EN)
+  const btnFr = document.getElementById('lang-fr');
+  const btnEn = document.getElementById('lang-en');
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    if (btnFr && btnEn) {
+      btnFr.classList.toggle('active', lang === 'fr');
+      btnEn.classList.toggle('active', lang === 'en');
+    }
     applyLanguageUI();
     renderCommands();
     renderLegalDoc();
-  });
+    // Update speech bubble quote in new language
+    const speechBubble = document.getElementById('speech-bubble');
+    if (speechBubble) {
+      speechBubble.textContent = (lang === 'fr' 
+        ? "Bonjour ! Je suis Chihiro Fujisaki. Tout va bien aujourd'hui ?"
+        : "Hello! I am Chihiro Fujisaki. Is everything okay today?");
+    }
+    // Update search placeholder
+    const cmdSearch = document.getElementById('cmd-search');
+    if (cmdSearch) {
+      cmdSearch.placeholder = (lang === 'fr' ? 'Rechercher une commande...' : 'Search for a command...');
+    }
+  }
+
+  if (btnFr) btnFr.addEventListener('click', () => setLanguage('fr'));
+  if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
 
   // Sprite click speech bubble
   const spriteCard = document.getElementById('hero-sprite');
@@ -432,7 +452,7 @@ function applyLanguageUI() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (i18nTexts[key] && i18nTexts[key][currentLang]) {
-      el.textContent = i18nTexts[key][currentLang];
+      el.innerHTML = i18nTexts[key][currentLang];
     }
   });
 }
@@ -472,7 +492,19 @@ const i18nTexts = {
   "doc_title": { fr: "Transparence & Documentation", en: "Transparency & Documentation" },
   "tab_tos": { fr: "Conditions d'Utilisation", en: "Terms of Service" },
   "tab_privacy": { fr: "Politique de Confidentialité", en: "Privacy Policy" },
-  "tab_readme": { fr: "Documentation", en: "Documentation" }
+  "tab_readme": { fr: "Documentation", en: "Documentation" },
+  "stat_langs": { fr: "Langues", en: "Languages" },
+  "stat_hope": { fr: "Espoir", en: "Hope" },
+  "footer_desc": { fr: "L'Ultime Programmeur et Alter Ego au service de vos serveurs Discord.", en: "The Ultimate Programmer and Alter Ego at the service of your Discord guilds." },
+  "footer_nav": { fr: "Navigation", en: "Navigation" },
+  "footer_community": { fr: "Communauté", en: "Community" },
+  "footer_dev": { fr: "Développeur", en: "Developer" },
+  "footer_copy": { fr: "© 2026 Chihiro [IA] — Développé avec Espoir par Kitsoune.", en: "© 2026 Chihiro [AI] — Developed with Hope by Kitsoune." },
+  "footer_host": { fr: "Hébergé fièrement sur GitHub Pages.", en: "Proudly hosted on GitHub Pages." },
+  "disclaimer": {
+    fr: "⚠️ <strong>Avertissement Fan Project :</strong> Chihiro [IA] est un projet de fan à but non lucratif créé à des fins d'apprentissage et de divertissement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les noms, personnages, sprites et univers appartiennent exclusivement à leurs ayants droit respectifs.",
+    en: "⚠️ <strong>Fan Project Disclaimer:</strong> Chihiro [AI] is an unofficial non-profit fan project created for learning and entertainment purposes. It is in no way affiliated with <strong>Spike Chunsoft Co., Ltd.</strong> All names, characters, sprites, and assets belong exclusively to their respective rights holders."
+  },
 };
 
 document.addEventListener('DOMContentLoaded', initApp);
