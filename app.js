@@ -345,7 +345,7 @@ function renderCommands() {
   const filtered = commandsData.filter(cmd => {
     const matchCat = (currentCategory === 'all' || cmd.category === currentCategory);
     const matchSearch = cmd.name.toLowerCase().includes(searchVal) ||
-                        cmd.desc[currentLang].toLowerCase().includes(searchVal);
+      cmd.desc[currentLang].toLowerCase().includes(searchVal);
     return matchCat && matchSearch;
   });
 
@@ -393,7 +393,7 @@ function setupEventListeners() {
     // Update speech bubble quote in new language
     const speechBubble = document.getElementById('speech-bubble');
     if (speechBubble) {
-      speechBubble.textContent = (lang === 'fr' 
+      speechBubble.textContent = (lang === 'fr'
         ? "Bonjour ! Je suis Chihiro Fujisaki. Tout va bien aujourd'hui ?"
         : "Hello! I am Chihiro Fujisaki. Is everything okay today?");
     }
@@ -499,7 +499,7 @@ const i18nTexts = {
   "footer_nav": { fr: "Navigation", en: "Navigation" },
   "footer_community": { fr: "Communauté", en: "Community" },
   "footer_dev": { fr: "Développeur", en: "Developer" },
-  "footer_copy": { fr: "© 2026 Chihiro [IA] — Développé avec Espoir par Kitsoune.", en: "© 2026 Chihiro [AI] — Developed with Hope by Kitsoune." },
+  "footer_copy": { fr: "© 2026 Chihiro [IA] — Développé avec Espoir par KITS Progress Inc.", en: "© 2026 Chihiro [AI] — Developed with Hope by KITS Progress Inc." },
   "footer_host": { fr: "Hébergé fièrement sur GitHub Pages.", en: "Proudly hosted on GitHub Pages." },
   "disclaimer": {
     fr: "⚠️ <strong>Avertissement Fan Project :</strong> Chihiro [IA] est un projet de fan à but non lucratif créé à des fins d'apprentissage et de divertissement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les noms, personnages, sprites et univers appartiennent exclusivement à leurs ayants droit respectifs.",
