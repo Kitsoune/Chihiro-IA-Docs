@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chihiro [IA] — L'Ultime Bot Discord Danganronpa</title>
+  <meta name="description" content="Chihiro [IA] est un bot Discord Danganronpa persistant avec Tamagotchi Alter Ego, mini-jeux de procès de classe, pêche, réseau, cartes de profil et boîte mail Components V2.">
+  <link rel="icon" type="image/gif" href="assets/chihiro.gif">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img src="assets/chihiro.gif" alt="Chihiro Fujisaki" class="brand-avatar">
+        <div class="brand-title">
+          <span class="brand-name">Chihiro [IA]</span>
+          <span class="brand-badge">Alter Ego v2.0.0</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
+          <li><a href="#commands" class="nav-link" data-i18n="nav_commands">Commandes</a></li>
+          <li><a href="#legal" class="nav-link" data-i18n="nav_docs">Documentation & ToS</a></li>
+          <li><a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener" class="nav-link" data-i18n="nav_support">Support Discord</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn" aria-label="Changer de langue">
+          🇫🇷 FR
+        </button>
+        <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener" class="btn btn-discord">
+          <svg width="18" height="14" viewBox="0 0 127.14 96.36" fill="currentColor">
+            <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.14c2.64-27.38-4.51-51.11-18.85-72.15ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+          </svg>
+          Discord
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="status-dot"></span>
+          <span data-i18n="hero_tag">ALTER EGO v2.0.0 EN LIGNE</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text" data-i18n="hero_title">L'Ultime Intelligence Artificielle sur Discord</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Prenez soin de Chihiro, participez aux débats de classe contre Monokuma, explorez le réseau et vivez l'expérience Danganronpa sur vos serveurs !
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="btn_invite">
+            🌸 Inviter Chihiro
+          </a>
+          <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="btn_support">
+            💬 Serveur de Support
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">v2.0.0</span>
+            <span class="stat-label">Version</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">7</span>
+            <span class="stat-label">Langues</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Espoir</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Talking Sprite -->
+      <div class="hero-sprite-card" id="hero-sprite">
+        <div class="sprite-container">
+          <img src="assets/chihiro.gif" alt="Chihiro Pixel Sprite" class="sprite-img">
+        </div>
+        <div class="speech-bubble" id="speech-bubble">
+          "Bonjour ! Je suis Chihiro Fujisaki. Tout va bien aujourd'hui ?"
+        </div>
+        <span class="sprite-hint" data-i18n="sprite_hint">✨ Clique sur Chihiro pour lui parler !</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="features_tag">CAPACITÉS DU SYSTÈME</span>
+        <h2 class="section-title" data-i18n="features_title">Une immersion complète dans l'Espoir</h2>
+        <p class="section-desc" data-i18n="features_desc">Développé pour apporter l'ambiance authentique de Kibougamine avec une interface ultra-moderne.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title" data-i18n="feat1_title">e-Handbook & Tamagotchi</h3>
+          <p class="feature-text" data-i18n="feat1_desc">
+            Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim, thèmes de personnages et cartes de profil V2.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3 class="feature-title" data-i18n="feat2_title">Mini-Jeux & Débats de Classe</h3>
+          <p class="feature-text" data-i18n="feat2_desc">
+            Défiez Monokuma en Débat Non-Stop, duel de réfutation, jeu du pendu ou morpion contre Chiaki Nanami.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎣</div>
+          <h3 class="feature-title" data-i18n="feat3_title">Lac de l'Espoir & Réseau</h3>
+          <p class="feature-text" data-i18n="feat3_desc">
+            Pêchez des dizaines d'espèces de poissons uniques, interceptez des paquets de données et échangez des fichiers rares.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📬</div>
+          <h3 class="feature-title" data-i18n="feat4_title">Boîte Mail Components V2</h3>
+          <p class="feature-text" data-i18n="feat4_desc">
+            Système de courrier nouvelle génération inspiré de Koya avec boutons d'actions et envoi de pièces jointes sans spam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commands Section -->
+  <section class="section" id="commands">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="cmd_tag">CONSOLE DES COMMANDES</span>
+        <h2 class="section-title" data-i18n="cmd_title">Toutes les commandes en un coup d'œil</h2>
+      </div>
+
+      <div class="commands-controls">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="cmd-search" class="search-input" placeholder="Rechercher une commande..." data-i18n="search_placeholder">
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab-btn active" data-cat="all" data-i18n="tab_all">Toutes</button>
+          <button class="tab-btn" data-cat="tamagotchi" data-i18n="tab_tamagotchi">Tamagotchi</button>
+          <button class="tab-btn" data-cat="games" data-i18n="tab_games">Mini-Jeux</button>
+          <button class="tab-btn" data-cat="economy" data-i18n="tab_economy">Économie</button>
+          <button class="tab-btn" data-cat="fishing" data-i18n="tab_fishing">Pêche & Réseau</button>
+          <button class="tab-btn" data-cat="mail" data-i18n="tab_mail">Courrier</button>
+        </div>
+      </div>
+
+      <div class="commands-grid" id="commands-list">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Documentation Section -->
+  <section class="section" id="legal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="doc_tag">DOCUMENTS LÉGAUX</span>
+        <h2 class="section-title" data-i18n="doc_title">Transparence & Documentation</h2>
+      </div>
+
+      <div class="docs-wrapper">
+        <div class="docs-header">
+          <div class="docs-tabs">
+            <button class="doc-tab-btn active" data-doc="tos" data-i18n="tab_tos">Conditions d'Utilisation</button>
+            <button class="doc-tab-btn" data-doc="privacy" data-i18n="tab_privacy">Politique de Confidentialité</button>
+            <button class="doc-tab-btn" data-doc="readme" data-i18n="tab_readme">Documentation</button>
+          </div>
+        </div>
+
+        <div class="docs-content" id="doc-body">
+          <!-- Rendered dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        ⚠️ <strong>Avertissement Fan Project :</strong> Chihiro [IA] est un projet de fan à but non lucratif créé à des fins d'apprentissage et de divertissement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les noms, personnages, sprites et univers appartiennent exclusivement à leurs ayants droit respectifs.
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand">
+            <img src="assets/chihiro.gif" alt="Chihiro" class="brand-avatar">
+            <span class="brand-name">Chihiro [IA]</span>
+          </a>
+          <p class="footer-desc">
+            L'Ultime Programmeur et Alter Ego au service de vos serveurs Discord.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Fonctionnalités</a></li>
+            <li><a href="#commands">Commandes</a></li>
+            <li><a href="#legal">ToS & Confidentialité</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Communauté</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener">Serveur de Support</a></li>
+            <li><a href="https://discord.com/terms" target="_blank" rel="noopener">Conditions Discord</a></li>
+            <li><a href="https://discord.com/privacy" target="_blank" rel="noopener">Vie Privée Discord</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Développeur</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/Kitsoune" target="_blank" rel="noopener">GitHub @Kitsoune</a></li>
+            <li><span>Discord : @xkitsoune</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Chihiro [IA] — Développé avec Espoir par Kitsoune.</p>
+        <p>Hébergé fièrement sur GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
