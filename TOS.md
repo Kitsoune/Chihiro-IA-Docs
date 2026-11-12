@@ -1,6 +1,6 @@
 # 🇫🇷 Conditions d'Utilisation — Chihiro [IA]
 
-_Dernière mise à jour : 28 août 2026 (v2.0.0)_
+_Dernière mise à jour : 12 novembre 2026_
 
 ## 1\. Acceptation des Conditions
 
@@ -22,7 +22,13 @@ Chihiro \[IA] est un projet de fan non officiel fourni "tel quel", à des fins d
 - **Droit de Résiliation (par le Développeur) :** Nous nous réservons le droit de suspendre ou de révoquer l'accès au bot à tout utilisateur ou serveur qui ne respecterait pas ces conditions, et ce, sans préavis.
 - **Arrêt du Projet :** Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro \[IA] à tout moment, de manière permanente et sans préavis.
 
-## 4\. Contact
+## 4\. Intelligence Artificielle
+
+- **Réponses générées :** Les réponses de Chihiro en discussion (`/chat`, mention ou réponse à ses messages) sont générées automatiquement par des services d'IA tiers. Elles peuvent être inexactes, incomplètes ou inappropriées.
+- **Responsabilité :** Ces réponses ne reflètent pas l'avis du développeur, qui ne peut être tenu responsable de leur contenu ni de l'usage qui en est fait.
+- **Filtres :** Les contenus sexuels et les insultes sont filtrés, sans garantie d'efficacité totale. Tenter de contourner ces protections est interdit et peut entraîner une exclusion du bot.
+
+## 5\. Contact
 
 Pour toute question ou préoccupation relative à ces conditions ou au bot, veuillez contacter le développeur :
 
@@ -32,7 +38,7 @@ Pour toute question ou préoccupation relative à ces conditions ou au bot, veui
 
 # 🇬🇧 Terms of Service — Chihiro [AI]
 
-_Last Updated: August 28, 2026 (v2.0.0)_
+_Last Updated: November 12, 2026_
 
 ## 1. Acceptance of Terms
 
@@ -54,7 +60,13 @@ Chihiro [AI] is an unofficial fan project provided "as is" for entertainment pur
 - **Right of Termination (by the Developer):** We reserve the right to suspend or revoke access to the bot for any user or server that violates these terms, without prior notice.
 - **Project Discontinuation:** The developer reserves the right to cease development, maintenance, or hosting of the Chihiro [AI] bot at any time, permanently and without notice.
 
-## 4. Contact
+## 4. Artificial Intelligence
+
+- **Generated replies:** Chihiro's chat replies (`/chat`, mentions or replies to her messages) are generated automatically by third-party AI services. They may be inaccurate, incomplete or inappropriate.
+- **Liability:** These replies do not reflect the developer's views, and the developer cannot be held responsible for their content or for how they are used.
+- **Filters:** Sexual content and insults are filtered, with no guarantee of complete effectiveness. Trying to bypass these protections is forbidden and may lead to being banned from the bot.
+
+## 5. Contact
 
 For any questions or concerns regarding these terms or the bot, please contact the developer:
 

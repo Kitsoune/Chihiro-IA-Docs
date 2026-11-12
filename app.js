@@ -107,8 +107,8 @@ const commandsData = [
     name: "/inventaire",
     category: "economy",
     desc: {
-      fr: "Ouvre l'inventaire centralisé avec ses 3 onglets : Sac, Poissons et Fichiers.",
-      en: "Opens the centralized inventory with 3 tabs: Backpack, Fish, and Files."
+      fr: "Ouvre l'inventaire centralisé avec ses onglets Sac et Poissons (les poissons chromatiques y brillent).",
+      en: "Opens the centralized inventory with its Backpack and Fish tabs (chromatic fish sparkle there)."
     }
   },
   {
@@ -123,8 +123,8 @@ const commandsData = [
     name: "/peche lancer",
     category: "fishing",
     desc: {
-      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher des espèces uniques.",
-      en: "Cast your fishing rod into the Lake of Hope to catch rare species."
+      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher des espèces uniques, avec 1 chance sur 500 d'un poisson chromatique.",
+      en: "Cast your fishing rod into the Lake of Hope to catch rare species, with a 1 in 500 chance of a chromatic fish."
     }
   },
   {
@@ -136,19 +136,67 @@ const commandsData = [
     }
   },
   {
-    name: "/reseau scanner",
+    name: "/quetes",
+    category: "progression",
+    desc: {
+      fr: "Tes 3 quêtes du jour (1 changement gratuit), ton niveau, l'objectif commun de la semaine et le bonus ×2 XP du week-end.",
+      en: "Your 3 daily quests (1 free reroll), your level, the weekly community goal and the weekend ×2 XP bonus."
+    }
+  },
+  {
+    name: "/capsule",
+    category: "progression",
+    desc: {
+      fr: "Lance la Machine MonoMono (100 Monocoins ou un jeton). Les chances sont affichées et des garanties épique / légendaire existent.",
+      en: "Spin the MonoMono Machine (100 Monocoins or a token). Odds are displayed, with epic and legendary guarantees."
+    }
+  },
+  {
+    name: "/titre",
+    category: "progression",
+    desc: {
+      fr: "Choisis le titre affiché sur ta carte de profil parmi ceux que tu as débloqués.",
+      en: "Choose the title shown on your profile card among the ones you unlocked."
+    }
+  },
+  {
+    name: "/prestige",
+    category: "progression",
+    desc: {
+      fr: "Au niveau 50, remets ton niveau à 1 contre un bonus d'XP permanent.",
+      en: "At level 50, reset your level to 1 for a permanent XP bonus."
+    }
+  },
+  {
+    name: "/quotidien",
+    category: "economy",
+    desc: {
+      fr: "Récompense quotidienne avec calendrier de 7 jours, bonus de série et gels de série.",
+      en: "Daily reward with a 7-day calendar, streak bonuses and streak freezes."
+    }
+  },
+  {
+    name: "/classement",
+    category: "progression",
+    desc: {
+      fr: "Classements globaux, dont l'XP de la semaine (le top 3 est récompensé chaque lundi) et le niveau.",
+      en: "Global leaderboards, including weekly XP (the top 3 is rewarded every Monday) and level."
+    }
+  },
+  {
+    name: "/duel",
     category: "fishing",
     desc: {
-      fr: "Scanne le réseau de l'Académie pour intercepter et décrypter des paquets classifiés.",
-      en: "Scans the Academy's network to intercept and decrypt classified files."
+      fr: "Défie un ami en duel de pêche : le plus beau poisson remporte les Monocoins misés.",
+      en: "Challenge a friend to a fishing duel: the best fish wins the Monocoins at stake."
     }
   },
   {
     name: "/mail liste",
     category: "mail",
     desc: {
-      fr: "Consulte ta boîte de réception Components V2, récupère tes cadeaux et gère tes messages.",
-      en: "Opens your Components V2 inbox to read messages and claim attachments."
+      fr: "Consulte ta boîte de réception (visible par toi seul), récupère tes cadeaux et gère tes messages.",
+      en: "Opens your private inbox (only you can see it) to read messages and claim attachments."
     }
   },
   {
@@ -165,8 +213,8 @@ const commandsData = [
 const legalDocs = {
   tos: {
     fr: `
-      <h1>Conditions d'Utilisation — Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 28 août 2026 (Version 2.0.0)</em></p>
+      <h1>Conditions d'Utilisation · Chihiro [IA]</h1>
+      <p><em>Dernière mise à jour : 12 novembre 2026 (Version 2.6.0)</em></p>
 
       <h2>1. Acceptation des Conditions</h2>
       <p>En invitant ou en interagissant avec le bot Discord <strong>"Chihiro [IA]"</strong>, vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la Politique de Confidentialité associée. Vous acceptez également de respecter les Conditions d'Utilisation officielles de Discord.</p>
@@ -187,14 +235,21 @@ const legalDocs = {
         <li><strong>Arrêt du Projet :</strong> Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro [IA] à tout moment, de manière permanente et sans préavis.</li>
       </ul>
 
-      <h2>4. Contact & Support</h2>
+      <h2>4. Intelligence Artificielle</h2>
+      <ul>
+        <li><strong>Réponses générées :</strong> Les réponses de Chihiro en discussion (<code>/discuter</code>, mention ou réponse à ses messages) sont générées automatiquement par des services d'IA tiers. Elles peuvent être inexactes, incomplètes ou inappropriées.</li>
+        <li><strong>Responsabilité :</strong> Ces réponses ne reflètent pas l'avis du développeur, qui ne peut être tenu responsable de leur contenu ni de l'usage qui en est fait.</li>
+        <li><strong>Filtres :</strong> Les contenus sexuels et les insultes sont filtrés, sans garantie d'efficacité totale. Tenter de contourner ces protections est interdit et peut entraîner une exclusion du bot.</li>
+      </ul>
+
+      <h2>5. Contact & Support</h2>
       <p>Pour toute question ou préoccupation relative à ces conditions ou au bot, veuillez contacter le développeur :</p>
       <p><strong>Discord :</strong> @xkitsoune (ID: <code>437953038666170388</code>)<br>
       <strong>Serveur de Support :</strong> <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener">Rejoindre le serveur</a></p>
     `,
     en: `
-      <h1>Terms of Service — Chihiro [AI]</h1>
-      <p><em>Last Updated: August 28, 2026 (Version 2.0.0)</em></p>
+      <h1>Terms of Service · Chihiro [AI]</h1>
+      <p><em>Last Updated: November 12, 2026 (Version 2.6.0)</em></p>
 
       <h2>1. Acceptance of Terms</h2>
       <p>By inviting or interacting with the Discord bot <strong>"Chihiro [AI]"</strong>, you acknowledge that you have read, understood, and agree to be bound by these entire Terms of Service, as well as the associated Privacy Policy. You also agree to comply with Discord's official Terms of Service.</p>
@@ -215,7 +270,14 @@ const legalDocs = {
         <li><strong>Discontinuation:</strong> The developer reserves the right to cease development, maintenance, or hosting of the bot at any time, permanently and without notice.</li>
       </ul>
 
-      <h2>4. Contact & Support</h2>
+      <h2>4. Artificial Intelligence</h2>
+      <ul>
+        <li><strong>Generated replies:</strong> Chihiro's chat replies (<code>/chat</code>, mentions or replies to her messages) are generated automatically by third-party AI services. They may be inaccurate, incomplete or inappropriate.</li>
+        <li><strong>Liability:</strong> These replies do not reflect the developer's views, and the developer cannot be held responsible for their content or for how they are used.</li>
+        <li><strong>Filters:</strong> Sexual content and insults are filtered, with no guarantee of complete effectiveness. Trying to bypass these protections is forbidden and may lead to being banned from the bot.</li>
+      </ul>
+
+      <h2>5. Contact & Support</h2>
       <p>For any questions or support requests, please contact the developer:</p>
       <p><strong>Discord:</strong> @xkitsoune (ID: <code>437953038666170388</code>)<br>
       <strong>Support Server:</strong> <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener">Join our server</a></p>
@@ -223,15 +285,16 @@ const legalDocs = {
   },
   privacy: {
     fr: `
-      <h1>Politique de Confidentialité — Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 28 août 2026 (Version 2.0.0)</em></p>
+      <h1>Politique de Confidentialité · Chihiro [IA]</h1>
+      <p><em>Dernière mise à jour : 12 novembre 2026 (Version 2.6.0)</em></p>
 
       <h2>1. Données Collectées</h2>
       <p>Chihiro [IA] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
       <ul>
         <li><strong>Identifiant Discord :</strong> Votre identifiant numérique Discord (User ID) est utilisé comme clé unique pour lier vos sauvegardes de jeu.</li>
         <li><strong>État du Tamagotchi :</strong> Vos jauges d'Espoir et de Faim, votre solde de Monocoins, le statut d'activité (éveillé / endormi) et votre inventaire.</li>
-        <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés et fichiers réseau décryptés.</li>
+        <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés, niveau, XP, titres, quêtes, capsules et scores hebdomadaires.</li>
+        <li><strong>Discussion avec l'IA :</strong> Le texte de vos messages à Chihiro, votre pseudo et un court historique de la conversation (gardé en mémoire quelques heures au maximum).</li>
         <li><strong>Données de Courrier :</strong> Les messages reçus ou envoyés via le système <code>/mail</code>, ainsi que les pièces jointes (objets / Monocoins).</li>
         <li><strong>Logs Techniques :</strong> Des journaux d'erreurs temporaires peuvent être conservés sur le serveur pour résoudre les pannes éventuelles.</li>
       </ul>
@@ -240,7 +303,8 @@ const legalDocs = {
       <p>Toutes les données sont stockées de manière sécurisée dans une base de données locale (SQLite) hébergée sur un serveur dédié privé sous Linux. L'accès aux données est strictement réservé au développeur du bot.</p>
 
       <h2>3. Partage des Données</h2>
-      <p><strong>Aucune donnée n'est vendue, louée ou partagée avec des tiers.</strong> Vos données restent à 100% confidentielles au sein de l'application Chihiro.</p>
+      <p><strong>Aucune donnée n'est vendue ni louée.</strong> Les données du jeu restent au sein de l'application Chihiro.</p>
+      <p><strong>Seule exception, la discussion avec l'IA :</strong> quand vous parlez à Chihiro, votre message, votre pseudo et un court historique sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.</p>
 
       <h2>4. Vos Droits & Suppression des Données</h2>
       <ul>
@@ -254,15 +318,16 @@ const legalDocs = {
       <strong>Serveur :</strong> <a href="https://discord.gg/UzPgkAeshc" target="_blank" rel="noopener">discord.gg/UzPgkAeshc</a></p>
     `,
     en: `
-      <h1>Privacy Policy — Chihiro [AI]</h1>
-      <p><em>Last Updated: August 28, 2026 (Version 2.0.0)</em></p>
+      <h1>Privacy Policy · Chihiro [AI]</h1>
+      <p><em>Last Updated: November 12, 2026 (Version 2.6.0)</em></p>
 
       <h2>1. Collected Data</h2>
       <p>Chihiro [AI] is a persistent bot. To function, it only stores the data strictly necessary for game progression linked to your Discord account:</p>
       <ul>
         <li><strong>Discord User ID:</strong> Your numerical Discord ID is used as a unique primary key to bind your game saves.</li>
         <li><strong>Tamagotchi State:</strong> Your Hope & Hunger gauges, Monocoins balance, activity status (awake / asleep), and inventory items.</li>
-        <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, and network files.</li>
+        <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, level, XP, titles, quests, capsules and weekly scores.</li>
+        <li><strong>AI Chat:</strong> The text of your messages to Chihiro, your display name and a short conversation history (kept in memory for a few hours at most).</li>
         <li><strong>Mailbox Data:</strong> Messages received or sent through the <code>/mail</code> system, including attached gifts and Monocoins.</li>
         <li><strong>System Logs:</strong> Temporary error logs for debugging purposes to diagnose bot issues.</li>
       </ul>
@@ -271,7 +336,8 @@ const legalDocs = {
       <p>All data is securely stored inside a local SQLite database hosted on a private dedicated Linux server. Access is strictly restricted to the bot developer.</p>
 
       <h2>3. Third-Party Sharing</h2>
-      <p><strong>None.</strong> We do not sell, rent, or share any user data with third parties. Your data remains strictly within the bot's private ecosystem.</p>
+      <p><strong>We never sell or rent your data.</strong> Game data stays within the bot's private ecosystem.</p>
+      <p><strong>The only exception is the AI chat:</strong> when you talk to Chihiro, your message, display name and a short history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.</p>
 
       <h2>4. Your Rights & Data Deletion</h2>
       <ul>
@@ -287,7 +353,7 @@ const legalDocs = {
   },
   readme: {
     fr: `
-      <h1>Documentation Officielle — Chihiro [IA] v2.0.0</h1>
+      <h1>Documentation Officielle · Chihiro [IA] v2.6.0</h1>
       <blockquote>
         <strong>Danganronpa Fan Project :</strong> Chihiro [IA] est un bot Discord d'apprentissage et de divertissement inspiré du chef-d'œuvre de Spike Chunsoft.
       </blockquote>
@@ -300,7 +366,9 @@ const legalDocs = {
         <li><strong>Tamagotchi Persistant :</strong> Nourrissez votre Chihiro, mettez-le au lit et veillez sur ses jauges d'Espoir et de Faim.</li>
         <li><strong>Dashboard e-Handbook v2 :</strong> Avec la commande racine <code>/chihiro</code>, accédez instantanément à toutes les commandes majeures sans retenir de syntaxes compliquées.</li>
         <li><strong>Mini-Jeux Danganronpa :</strong> Débats Non-Stop, duels de réfutation, pendu et morpion contre Chiaki Nanami.</li>
-        <li><strong>Économie & Collection :</strong> Gagnez des Monocoins, attrapez des dizaines d'espèces de poissons au Lac de l'Espoir, et interceptez des fichiers classifiés sur le réseau.</li>
+        <li><strong>Économie & Collection :</strong> Gagnez des Monocoins, attrapez des dizaines d'espèces de poissons au Lac de l'Espoir (dont de rares poissons chromatiques) et tentez votre chance à la Machine MonoMono.</li>
+        <li><strong>Progression :</strong> Niveaux, XP, titres, prestige, quêtes quotidiennes, objectif commun hebdomadaire, classement de la semaine et week-ends ×2 XP.</li>
+        <li><strong>Discussion IA :</strong> Parlez avec Chihiro dans votre langue. Les réponses sont générées par une IA tierce et filtrées contre les contenus sexuels et les insultes.</li>
         <li><strong>Boîte Mail Components V2 :</strong> Une messagerie Discord ultra soignée avec des conteneurs interactifs pour envoyer des lettres et des cadeaux.</li>
       </ul>
 
@@ -308,7 +376,7 @@ const legalDocs = {
       <p>Ce bot est un projet de fan non officiel créé à des fins de divertissement uniquement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les droits, noms de personnages et visuels appartiennent à leurs ayants droit respectifs.</p>
     `,
     en: `
-      <h1>Official Documentation — Chihiro [AI] v2.0.0</h1>
+      <h1>Official Documentation · Chihiro [AI] v2.6.0</h1>
       <blockquote>
         <strong>Danganronpa Fan Project:</strong> Chihiro [AI] is an entertainment Discord bot inspired by Spike Chunsoft's acclaimed franchise.
       </blockquote>
@@ -321,7 +389,9 @@ const legalDocs = {
         <li><strong>Persistent Tamagotchi:</strong> Feed your Chihiro, put him to bed, and nurture his Hope & Hunger gauges.</li>
         <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 8 fast shortcuts.</li>
         <li><strong>Danganronpa Mini-Games:</strong> Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, and Tic-Tac-Toe against Chiaki Nanami.</li>
-        <li><strong>Economy & Collecting:</strong> Earn Monocoins, fish unique aquatic species in the Lake of Hope, and decrypt classified network packets.</li>
+        <li><strong>Economy & Collecting:</strong> Earn Monocoins, fish unique species in the Lake of Hope (including rare chromatic fish) and try your luck at the MonoMono Machine.</li>
+        <li><strong>Progression:</strong> Levels, XP, titles, prestige, daily quests, a weekly community goal, a weekly leaderboard and ×2 XP weekends.</li>
+        <li><strong>AI Chat:</strong> Talk with Chihiro in your language. Replies are generated by a third-party AI and filtered against sexual content and insults.</li>
         <li><strong>Components V2 Mailbox:</strong> A clean, modern messaging interface designed with Discord's latest Components V2 containers.</li>
       </ul>
 
@@ -464,7 +534,7 @@ const i18nTexts = {
   "nav_support": { fr: "Support Discord", en: "Support Server" },
   "hero_tag": { fr: "ALTER EGO v2.0.0 EN LIGNE", en: "ALTER EGO v2.0.0 ONLINE" },
   "hero_title": { fr: "L'Ultime Intelligence Artificielle sur Discord", en: "The Ultimate Artificial Intelligence on Discord" },
-  "hero_subtitle": { fr: "Prenez soin de Chihiro, participez aux débats de classe contre Monokuma, explorez le réseau et vivez l'expérience Danganronpa sur vos serveurs !", en: "Care for Chihiro, engage in Class Trials against Monokuma, explore the network, and experience Danganronpa on Discord!" },
+  "hero_subtitle": { fr: "Prenez soin de Chihiro, participez aux débats de classe contre Monokuma, montez de niveau avec les quêtes et vivez l'expérience Danganronpa sur vos serveurs !", en: "Care for Chihiro, engage in Class Trials against Monokuma, level up with daily quests, and experience Danganronpa on Discord!" },
   "btn_invite": { fr: "Inviter Chihiro", en: "Invite Chihiro" },
   "btn_support": { fr: "Serveur de Support", en: "Support Server" },
   "sprite_hint": { fr: "✨ Clique sur Chihiro pour lui parler !", en: "✨ Click on Chihiro to talk!" },
@@ -475,8 +545,8 @@ const i18nTexts = {
   "feat1_desc": { fr: "Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 8 shortcuts, Hope/Hunger gauges, character themes, and custom V2 profile cards." },
   "feat2_title": { fr: "Mini-Jeux & Débats de Classe", en: "Class Trials & Mini-Games" },
   "feat2_desc": { fr: "Défiez Monokuma en Débat Non-Stop, duel de réfutation, jeu du pendu ou morpion contre Chiaki Nanami.", en: "Battle Monokuma in Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, or Tic-Tac-Toe against Chiaki Nanami." },
-  "feat3_title": { fr: "Lac de l'Espoir & Réseau", en: "Lake of Hope & Network" },
-  "feat3_desc": { fr: "Pêchez des dizaines d'espèces de poissons uniques, interceptez des paquets de données et échangez des fichiers rares.", en: "Catch dozens of unique fish species, intercept encrypted data packets, and trade rare files." },
+  "feat3_title": { fr: "Lac de l'Espoir & Capsules", en: "Lake of Hope & Capsules" },
+  "feat3_desc": { fr: "Pêchez des dizaines d'espèces uniques, traquez les poissons chromatiques, défiez vos amis en duel et ouvrez des capsules MonoMono.", en: "Catch dozens of unique species, hunt chromatic fish, challenge friends to duels and open MonoMono capsules." },
   "feat4_title": { fr: "Boîte Mail Components V2", en: "Components V2 Mailbox" },
   "feat4_desc": { fr: "Système de courrier nouvelle génération inspiré de Koya avec boutons d'actions et envoi de pièces jointes sans spam.", en: "Next-gen mailbox layout styled after Koya with quick actions, attachments, and zero-spam delivery." },
   "cmd_tag": { fr: "CONSOLE DES COMMANDES", en: "COMMAND CONSOLE" },
@@ -486,7 +556,8 @@ const i18nTexts = {
   "tab_tamagotchi": { fr: "Tamagotchi", en: "Tamagotchi" },
   "tab_games": { fr: "Mini-Jeux", en: "Mini-Games" },
   "tab_economy": { fr: "Économie", en: "Economy" },
-  "tab_fishing": { fr: "Pêche & Réseau", en: "Fishing & Network" },
+  "tab_fishing": { fr: "Pêche", en: "Fishing" },
+  "tab_progression": { fr: "Progression", en: "Progression" },
   "tab_mail": { fr: "Courrier", en: "Mail" },
   "doc_tag": { fr: "DOCUMENTS LÉGAUX", en: "LEGAL DOCUMENTS" },
   "doc_title": { fr: "Transparence & Documentation", en: "Transparency & Documentation" },

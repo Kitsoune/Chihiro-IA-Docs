@@ -1,6 +1,6 @@
 # 🇫🇷 Politique de Confidentialité — Chihiro [IA]
 
-_Dernière mise à jour : 28 août 2026 (v2.0.0)_
+_Dernière mise à jour : 12 novembre 2026_
 
 ## Quelles données collectons-nous ?
 
@@ -18,7 +18,9 @@ Toutes les données sont stockées dans une base de données locale (`chihiro.db
 
 ## Avec qui partageons-nous vos données ?
 
-**Personne.** Elles restent exclusivement dans l'écosystème du bot.
+**Personne, sauf pour la discussion avec l'IA.** Les données du jeu restent exclusivement dans l'écosystème du bot.
+
+Quand vous discutez avec Chihiro (`/chat`, mention ou réponse à l'un de ses messages), le texte de votre message, votre pseudo et un court historique de la conversation sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.
 
 ## Quels sont vos droits sur vos données ?
 
@@ -39,7 +41,7 @@ _En ajoutant et en utilisant le bot Chihiro [IA], vous consentez à la collecte 
 
 # 🇺🇸 Privacy Policy — Chihiro [AI]
 
-_Last Updated: August 28, 2026 (v2.0.0)_
+_Last Updated: November 12, 2026_
 
 ## What data do we collect?
 
@@ -57,7 +59,9 @@ All data is stored in a local database (`chihiro.db`) located on the private ser
 
 ## Who do we share your data with?
 
-**Nobody.** It remains exclusively within the bot's ecosystem.
+**Nobody, except for chatting with the AI.** Game data remains exclusively within the bot's ecosystem.
+
+When you chat with Chihiro (`/chat`, a mention or a reply to one of her messages), the text of your message, your display name and a short conversation history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.
 
 ## What are your rights over your data?
 
