@@ -104,19 +104,27 @@ const commandsData = [
     }
   },
   {
+    name: "/jeu quiz",
+    category: "games",
+    desc: {
+      fr: "Réponds à un quiz Danganronpa (35 questions, 3 difficultés) pour gagner des Monocoins. Une question toutes les 30 minutes.",
+      en: "Answer a Danganronpa quiz (35 questions, 3 difficulties) to earn Monocoins. One question every 30 minutes."
+    }
+  },
+  {
     name: "/inventaire",
     category: "economy",
     desc: {
-      fr: "Ouvre l'inventaire centralisé avec ses onglets Sac et Poissons (les poissons chromatiques y brillent).",
-      en: "Opens the centralized inventory with its Backpack and Fish tabs (chromatic fish sparkle there)."
+      fr: "Ouvre ton sac à dos illustré : une grille d'objets avec images, quantités et rareté, le détail de chaque objet, et un onglet Poissons.",
+      en: "Opens your illustrated backpack: a grid of items with pictures, quantities and rarity, each item's details, and a Fish tab."
     }
   },
   {
     name: "/item boutique",
     category: "economy",
     desc: {
-      fr: "Achète des objets, de la nourriture ou des thèmes visuels avec tes Monocoins.",
-      en: "Purchase items, food, or visual themes with your Monocoins."
+      fr: "Boutique illustrée : cartes d'objets avec prix et rareté, catégories Nourriture, Objets et Thèmes, et un tampon sur ce que tu viens d'acheter.",
+      en: "Illustrated shop: item cards with prices and rarity, Food, Items and Themes categories, and a stamp on what you just bought."
     }
   },
   {
@@ -195,8 +203,8 @@ const commandsData = [
     name: "/classement",
     category: "progression",
     desc: {
-      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche...).",
-      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (weekly XP rewarded every Monday, level, Monocoins, fishing...)."
+      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (21 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès...).",
+      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (21 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements...)."
     }
   },
   {
