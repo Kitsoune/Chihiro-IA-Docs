@@ -59,8 +59,8 @@ const commandsData = [
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Génère ta carte d'étudiant e-Handbook personnalisée avec ton niveau, stats et succès.",
-      en: "Generates your custom e-Handbook student ID card with level, stats, and badges."
+      fr: "Ouvre ton dossier d'élève : carte d'étudiant, statistiques, succès et titres, collection de poissons. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your student file: ID card, stats, achievements and titles, fish collection. Change your banner, colour and title from it."
     }
   },
   {
@@ -155,8 +155,8 @@ const commandsData = [
     name: "/roue",
     category: "progression",
     desc: {
-      fr: "Tourne gratuitement la roue de Monokuma une fois par jour (jackpot de 500 Monocoins, chances affichées).",
-      en: "Spin Monokuma's wheel for free once a day (500 Monocoins jackpot, odds displayed)."
+      fr: "Tourne gratuitement la roue de Monokuma une fois par jour. Ses cases changent chaque jour : jackpot de 500 Monocoins, mais aussi pertes de Monocoins, d'Espoir ou de Faim. Les vraies chances sont affichées.",
+      en: "Spin Monokuma's wheel for free once a day. Its slots change daily: a 500 Monocoins jackpot, but also Monocoins, Hope or Hunger losses. The real odds are shown."
     }
   },
   {
@@ -203,8 +203,8 @@ const commandsData = [
     name: "/duel",
     category: "fishing",
     desc: {
-      fr: "Défie un ami en duel de pêche : le plus beau poisson remporte les Monocoins misés.",
-      en: "Challenge a friend to a fishing duel: the best fish wins the Monocoins at stake."
+      fr: "Défie un ami en duel de pêche : le plus beau poisson remporte les Monocoins misés. Un duel utilise le temps de recharge de la pêche des deux joueurs.",
+      en: "Challenge a friend to a fishing duel: the best fish wins the Monocoins at stake. A duel uses both players' fishing cooldown."
     }
   },
   {
@@ -230,7 +230,7 @@ const legalDocs = {
   tos: {
     fr: `
       <h1>Conditions d'Utilisation · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 12 novembre 2026 (Version 2.6.0)</em></p>
+      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.7.0)</em></p>
 
       <h2>1. Acceptation des Conditions</h2>
       <p>En invitant ou en interagissant avec le bot Discord <strong>"Chihiro [IA]"</strong>, vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la Politique de Confidentialité associée. Vous acceptez également de respecter les Conditions d'Utilisation officielles de Discord.</p>
@@ -265,7 +265,7 @@ const legalDocs = {
     `,
     en: `
       <h1>Terms of Service · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 12, 2026 (Version 2.6.0)</em></p>
+      <p><em>Last Updated: November 13, 2026 (Version 2.7.0)</em></p>
 
       <h2>1. Acceptance of Terms</h2>
       <p>By inviting or interacting with the Discord bot <strong>"Chihiro [AI]"</strong>, you acknowledge that you have read, understood, and agree to be bound by these entire Terms of Service, as well as the associated Privacy Policy. You also agree to comply with Discord's official Terms of Service.</p>
@@ -288,7 +288,7 @@ const legalDocs = {
 
       <h2>4. Artificial Intelligence</h2>
       <ul>
-        <li><strong>Generated replies:</strong> Chihiro's chat replies (<code>/chat</code>, mentions or replies to her messages) are generated automatically by third-party AI services. They may be inaccurate, incomplete or inappropriate.</li>
+        <li><strong>Generated replies:</strong> Chihiro's chat replies (<code>/chat</code>, mentions or replies to his messages) are generated automatically by third-party AI services. They may be inaccurate, incomplete or inappropriate.</li>
         <li><strong>Liability:</strong> These replies do not reflect the developer's views, and the developer cannot be held responsible for their content or for how they are used.</li>
         <li><strong>Filters:</strong> Sexual content and insults are filtered, with no guarantee of complete effectiveness. Trying to bypass these protections is forbidden and may lead to being banned from the bot.</li>
       </ul>
@@ -302,16 +302,16 @@ const legalDocs = {
   privacy: {
     fr: `
       <h1>Politique de Confidentialité · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 12 novembre 2026 (Version 2.6.0)</em></p>
+      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.7.0)</em></p>
 
       <h2>1. Données Collectées</h2>
       <p>Chihiro [IA] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
       <ul>
         <li><strong>Identifiant Discord :</strong> Votre identifiant numérique Discord (User ID) est utilisé comme clé unique pour lier vos sauvegardes de jeu.</li>
         <li><strong>État du Tamagotchi :</strong> Vos jauges d'Espoir et de Faim, votre solde de Monocoins, le statut d'activité (éveillé / endormi) et votre inventaire.</li>
-        <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés, niveau, XP, titres, quêtes, capsules et scores hebdomadaires.</li>
+        <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés, niveau, XP, titres, quêtes, capsules, duels, temps de recharge et scores hebdomadaires.</li>
         <li><strong>Discussion avec l'IA :</strong> Le texte de vos messages à Chihiro, votre pseudo et un court historique de la conversation (gardé en mémoire quelques heures au maximum).</li>
-        <li><strong>Données de Courrier :</strong> Les messages reçus ou envoyés via le système <code>/mail</code>, ainsi que les pièces jointes (objets / Monocoins).</li>
+        <li><strong>Données de Courrier :</strong> Les messages reçus ou envoyés via le système <code>/mail</code>, ainsi que les pièces jointes (objets / Monocoins). Les notes de mise à jour du bot sont aussi déposées dans la boîte <code>/mail</code> de chaque joueur (jamais en message privé Discord).</li>
         <li><strong>Logs Techniques :</strong> Des journaux d'erreurs temporaires peuvent être conservés sur le serveur pour résoudre les pannes éventuelles.</li>
       </ul>
 
@@ -320,7 +320,7 @@ const legalDocs = {
 
       <h2>3. Partage des Données</h2>
       <p><strong>Aucune donnée n'est vendue ni louée.</strong> Les données du jeu restent au sein de l'application Chihiro.</p>
-      <p><strong>Seule exception, la discussion avec l'IA :</strong> quand vous parlez à Chihiro, votre message, votre pseudo et un court historique sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.</p>
+      <p><strong>Seule exception, la discussion avec l'IA :</strong> quand vous parlez à Chihiro, votre message (les mentions y sont remplacées par les pseudos des personnes, rôles et salons cités), votre pseudo et un court historique sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.</p>
 
       <h2>4. Vos Droits & Suppression des Données</h2>
       <ul>
@@ -335,16 +335,16 @@ const legalDocs = {
     `,
     en: `
       <h1>Privacy Policy · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 12, 2026 (Version 2.6.0)</em></p>
+      <p><em>Last Updated: November 13, 2026 (Version 2.7.0)</em></p>
 
       <h2>1. Collected Data</h2>
       <p>Chihiro [AI] is a persistent bot. To function, it only stores the data strictly necessary for game progression linked to your Discord account:</p>
       <ul>
         <li><strong>Discord User ID:</strong> Your numerical Discord ID is used as a unique primary key to bind your game saves.</li>
         <li><strong>Tamagotchi State:</strong> Your Hope & Hunger gauges, Monocoins balance, activity status (awake / asleep), and inventory items.</li>
-        <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, level, XP, titles, quests, capsules and weekly scores.</li>
+        <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, level, XP, titles, quests, capsules, duels, cooldowns and weekly scores.</li>
         <li><strong>AI Chat:</strong> The text of your messages to Chihiro, your display name and a short conversation history (kept in memory for a few hours at most).</li>
-        <li><strong>Mailbox Data:</strong> Messages received or sent through the <code>/mail</code> system, including attached gifts and Monocoins.</li>
+        <li><strong>Mailbox Data:</strong> Messages received or sent through the <code>/mail</code> system, including attached gifts and Monocoins. The bot's update notes are also placed in every player's <code>/mail</code> box (never sent as Discord direct messages).</li>
         <li><strong>System Logs:</strong> Temporary error logs for debugging purposes to diagnose bot issues.</li>
       </ul>
 
@@ -353,7 +353,7 @@ const legalDocs = {
 
       <h2>3. Third-Party Sharing</h2>
       <p><strong>We never sell or rent your data.</strong> Game data stays within the bot's private ecosystem.</p>
-      <p><strong>The only exception is the AI chat:</strong> when you talk to Chihiro, your message, display name and a short history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.</p>
+      <p><strong>The only exception is the AI chat:</strong> when you talk to Chihiro, your message (mentions are replaced by the names of the people, roles and channels you mention), display name and a short history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.</p>
 
       <h2>4. Your Rights & Data Deletion</h2>
       <ul>
