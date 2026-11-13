@@ -155,8 +155,8 @@ const commandsData = [
     name: "/roue",
     category: "progression",
     desc: {
-      fr: "Tourne gratuitement la roue de Monokuma une fois par jour. Ses cases changent chaque jour : jackpot de 500 Monocoins, mais aussi pertes de Monocoins, d'Espoir ou de Faim. Les vraies chances sont affichées.",
-      en: "Spin Monokuma's wheel for free once a day. Its slots change daily: a 500 Monocoins jackpot, but also Monocoins, Hope or Hunger losses. The real odds are shown."
+      fr: "Tourne gratuitement la roue de Monokuma une fois par jour. Ses cases changent chaque jour : jackpot de 500 Monocoins, mais aussi pertes de Monocoins, d'Espoir ou de Faim. Les vraies chances sont affichées à côté de la roue, sur la même image.",
+      en: "Spin Monokuma's wheel for free once a day. Its slots change daily: a 500 Monocoins jackpot, but also Monocoins, Hope or Hunger losses. The real odds are shown next to the wheel, in the same picture."
     }
   },
   {
@@ -171,8 +171,8 @@ const commandsData = [
     name: "/titre",
     category: "progression",
     desc: {
-      fr: "Choisis le titre affiché sur ta carte de profil parmi ceux que tu as débloqués.",
-      en: "Choose the title shown on your profile card among the ones you unlocked."
+      fr: "Vitrine de tous les titres (débloqués ou à débloquer, avec la condition) et choix du titre affiché sur ta carte de profil.",
+      en: "Showcase of every title (unlocked or not, with how to get it) and choice of the title shown on your profile card."
     }
   },
   {
@@ -203,8 +203,8 @@ const commandsData = [
     name: "/duel",
     category: "fishing",
     desc: {
-      fr: "Défie un ami en duel de pêche : le plus beau poisson remporte les Monocoins misés. Un duel utilise le temps de recharge de la pêche des deux joueurs.",
-      en: "Challenge a friend to a fishing duel: the best fish wins the Monocoins at stake. A duel uses both players' fishing cooldown."
+      fr: "Défie un ami en duel de pêche : le plus beau poisson remporte les Monocoins misés, résultat affiché sur une carte face à face. Un duel utilise le temps de recharge de la pêche des deux joueurs.",
+      en: "Challenge a friend to a fishing duel: the best fish wins the Monocoins at stake, shown on a face-off result card. A duel uses both players' fishing cooldown."
     }
   },
   {
