@@ -59,8 +59,8 @@ const commandsData = [
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre ton dossier d'élève : carte d'étudiant, statistiques, succès et titres, collection de poissons. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
-      en: "Opens your student file: ID card, stats, achievements and titles, fish collection. Change your banner, colour and title from it."
+      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, mur des succès et collection de poissons. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your illustrated student file: ID card, stats screen, achievements wall and fish collection. Change your banner, colour and title from it."
     }
   },
   {
@@ -195,8 +195,8 @@ const commandsData = [
     name: "/classement",
     category: "progression",
     desc: {
-      fr: "Classements globaux, dont l'XP de la semaine (le top 3 est récompensé chaque lundi) et le niveau.",
-      en: "Global leaderboards, including weekly XP (the top 3 is rewarded every Monday) and level."
+      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche...).",
+      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (weekly XP rewarded every Monday, level, Monocoins, fishing...)."
     }
   },
   {
@@ -230,7 +230,7 @@ const legalDocs = {
   tos: {
     fr: `
       <h1>Conditions d'Utilisation · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.7.0)</em></p>
+      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.8.0)</em></p>
 
       <h2>1. Acceptation des Conditions</h2>
       <p>En invitant ou en interagissant avec le bot Discord <strong>"Chihiro [IA]"</strong>, vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la Politique de Confidentialité associée. Vous acceptez également de respecter les Conditions d'Utilisation officielles de Discord.</p>
@@ -265,7 +265,7 @@ const legalDocs = {
     `,
     en: `
       <h1>Terms of Service · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 13, 2026 (Version 2.7.0)</em></p>
+      <p><em>Last Updated: November 13, 2026 (Version 2.8.0)</em></p>
 
       <h2>1. Acceptance of Terms</h2>
       <p>By inviting or interacting with the Discord bot <strong>"Chihiro [AI]"</strong>, you acknowledge that you have read, understood, and agree to be bound by these entire Terms of Service, as well as the associated Privacy Policy. You also agree to comply with Discord's official Terms of Service.</p>
@@ -302,7 +302,7 @@ const legalDocs = {
   privacy: {
     fr: `
       <h1>Politique de Confidentialité · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.7.0)</em></p>
+      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.8.0)</em></p>
 
       <h2>1. Données Collectées</h2>
       <p>Chihiro [IA] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
@@ -335,7 +335,7 @@ const legalDocs = {
     `,
     en: `
       <h1>Privacy Policy · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 13, 2026 (Version 2.7.0)</em></p>
+      <p><em>Last Updated: November 13, 2026 (Version 2.8.0)</em></p>
 
       <h2>1. Collected Data</h2>
       <p>Chihiro [AI] is a persistent bot. To function, it only stores the data strictly necessary for game progression linked to your Discord account:</p>
