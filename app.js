@@ -59,8 +59,8 @@ const commandsData = [
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, mur des succès et collection de poissons. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
-      en: "Opens your illustrated student file: ID card, stats screen, achievements wall and fish collection. Change your banner, colour and title from it."
+      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 32 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 32 achievements and fish collection by rarity. Change your banner, colour and title from it."
     }
   },
   {
@@ -131,8 +131,8 @@ const commandsData = [
     name: "/peche lancer",
     category: "fishing",
     desc: {
-      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher des espèces uniques, avec 1 chance sur 500 d'un poisson chromatique.",
-      en: "Cast your fishing rod into the Lake of Hope to catch rare species, with a 1 in 500 chance of a chromatic fish."
+      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher parmi 50 espèces (65 % commun, 25 % rare, 9 % épique, 1 % légendaire), avec 1 chance sur 500 d'un poisson chromatique.",
+      en: "Cast your fishing rod into the Lake of Hope to catch one of 50 species (65% common, 25% rare, 9% epic, 1% legendary), with a 1 in 500 chance of a chromatic fish."
     }
   },
   {
