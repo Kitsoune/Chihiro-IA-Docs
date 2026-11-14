@@ -67,16 +67,16 @@ const commandsData = [
     name: "/jeu debat",
     category: "games",
     desc: {
-      fr: "Engage un Débat Non-Stop contre Monokuma et tire sur la contradiction ! 55 situations tirées de Danganronpa 1, 2, V3, Ultra Despair Girls et Ultimate Summer Camp.",
-      en: "Engage in a Non-Stop Debate against Monokuma and shoot the weak point! 55 situations from Danganronpa 1, 2, V3, Ultra Despair Girls and Ultimate Summer Camp."
+      fr: "Engage un Débat Non-Stop contre Monokuma et tire sur la contradiction ! 75 situations tirées de Danganronpa 1, 2, V3, Ultra Despair Girls et Ultimate Summer Camp.",
+      en: "Engage in a Non-Stop Debate against Monokuma and shoot the weak point! 75 situations from Danganronpa 1, 2, V3, Ultra Despair Girls and Ultimate Summer Camp."
     }
   },
   {
     name: "/jeu refutation",
     category: "games",
     desc: {
-      fr: "Défends ton argumentaire lors d'un duel de réfutation intense et tranche l'argument faible parmi 58 situations.",
-      en: "Defend your thesis during an intense Rebuttal Showdown and cut the weak argument among 58 situations."
+      fr: "Défends ton argumentaire lors d'un duel de réfutation intense et tranche l'argument faux parmi 80 situations, avec le sujet affiché à l'écran.",
+      en: "Defend your thesis during an intense Rebuttal Showdown and cut the false argument among 80 situations, with the topic shown on screen."
     }
   },
   {
@@ -107,8 +107,8 @@ const commandsData = [
     name: "/jeu quiz",
     category: "games",
     desc: {
-      fr: "Réponds à un quiz Danganronpa (75 questions, 3 difficultés) pour gagner des Monocoins. Une question toutes les 30 minutes.",
-      en: "Answer a Danganronpa quiz (75 questions, 3 difficulties) to earn Monocoins. One question every 30 minutes."
+      fr: "Réponds à un quiz Danganronpa (106 questions, 3 difficultés) pour gagner des Monocoins. Une question toutes les 30 minutes.",
+      en: "Answer a Danganronpa quiz (106 questions, 3 difficulties) to earn Monocoins. One question every 30 minutes."
     }
   },
   {
