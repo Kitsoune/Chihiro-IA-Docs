@@ -35,8 +35,8 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt.",
-      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies."
+      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
@@ -67,40 +67,40 @@ const commandsData = [
     name: "/jeu debat",
     category: "games",
     desc: {
-      fr: "Engage un Débat Non-Stop contre Monokuma et tire sur la contradiction ! 75 situations tirées de Danganronpa 1, 2, V3, Ultra Despair Girls et Ultimate Summer Camp.",
-      en: "Engage in a Non-Stop Debate against Monokuma and shoot the weak point! 75 situations from Danganronpa 1, 2, V3, Ultra Despair Girls and Ultimate Summer Camp."
+      fr: "Engage un Débat Non-Stop contre Monokuma et tire sur la contradiction ! 75 situations tirées de Danganronpa 1, 2, V3, Ultra Despair Girls et Ultimate Summer Camp. Bouton Rejouer en fin de partie.",
+      en: "Engage in a Non-Stop Debate against Monokuma and shoot the weak point! 75 situations from Danganronpa 1, 2, V3, Ultra Despair Girls and Ultimate Summer Camp. Play again button at the end of the game."
     }
   },
   {
     name: "/jeu refutation",
     category: "games",
     desc: {
-      fr: "Défends ton argumentaire lors d'un duel de réfutation intense et tranche l'argument faux parmi 80 situations, avec le sujet affiché à l'écran.",
-      en: "Defend your thesis during an intense Rebuttal Showdown and cut the false argument among 80 situations, with the topic shown on screen."
+      fr: "Défends ton argumentaire lors d'un duel de réfutation intense et tranche l'argument faux parmi 80 situations, avec le sujet affiché à l'écran. Bouton Rejouer en fin de partie.",
+      en: "Defend your thesis during an intense Rebuttal Showdown and cut the false argument among 80 situations, with the topic shown on screen. Play again button at the end of the game."
     }
   },
   {
     name: "/jeu pendu",
     category: "games",
     desc: {
-      fr: "Hangman's Gambit : devine le mot mystère avant que Monokuma ne frappe.",
-      en: "Hangman's Gambit: guess the hidden word before Monokuma strikes."
+      fr: "Hangman's Gambit : devine le mot mystère avant que Monokuma ne frappe. Bouton Rejouer en fin de partie.",
+      en: "Hangman's Gambit: guess the hidden word before Monokuma strikes. Play again button at the end of the game."
     }
   },
   {
     name: "/jeu morpion",
     category: "games",
     desc: {
-      fr: "Partie amicale de morpion contre Chiaki Nanami.",
-      en: "Friendly game of Tic-Tac-Toe against Chiaki Nanami."
+      fr: "Partie amicale de morpion contre Chiaki Nanami. Bouton Rejouer en fin de partie.",
+      en: "Friendly game of Tic-Tac-Toe against Chiaki Nanami. Play again button at the end of the game."
     }
   },
   {
     name: "/jeu rps",
     category: "games",
     desc: {
-      fr: "Pierre-Papier-Ciseaux classique contre Monokuma.",
-      en: "Classic Rock-Paper-Scissors duel against Monokuma."
+      fr: "Pierre-Papier-Ciseaux classique contre Monokuma. Bouton Rejouer en fin de partie.",
+      en: "Classic Rock-Paper-Scissors duel against Monokuma. Play again button at the end of the game."
     }
   },
   {
@@ -203,8 +203,8 @@ const commandsData = [
     name: "/classement",
     category: "progression",
     desc: {
-      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (21 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès...).",
-      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (21 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements...)."
+      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (22 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès, cacas nettoyés...).",
+      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (22 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements, poop cleaned...)."
     }
   },
   {
