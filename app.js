@@ -35,24 +35,24 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.).",
-      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts."
+      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt.",
+      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies."
     }
   },
   {
     name: "/nourrir",
     category: "tamagotchi",
     desc: {
-      fr: "Nourrit Chihiro avec un aliment de ton inventaire pour remonter sa jauge de faim.",
-      en: "Feeds Chihiro with an item from your inventory to restore hunger."
+      fr: "Donne à Chihiro un objet de ton inventaire : la nourriture remonte sa faim, et chaque objet est un cadeau qui baisse le Désespoir de 1. Chihiro réagit selon ses goûts de Danganronpa 1 (il adore le Parfum Myrtille et déteste la Barrette Chaton).",
+      en: "Gives Chihiro an item from your inventory: food restores hunger, and every object is a present that lowers Despair by 1. Chihiro reacts according to his tastes from Danganronpa 1 (he loves the Blueberry Perfume and hates the Kitten Hairclip)."
     }
   },
   {
     name: "/dormir",
     category: "tamagotchi",
     desc: {
-      fr: "Envoie Chihiro faire une sieste réparatrice dans son lit.",
-      en: "Puts Chihiro to sleep for a restorative nap in bed."
+      fr: "Envoie Chihiro faire une sieste réparatrice dans son lit. Le réveiller avant la fin annule le bonus d'Espoir.",
+      en: "Puts Chihiro to sleep for a restorative nap in bed. Waking him up early cancels the Hope bonus."
     }
   },
   {
@@ -310,13 +310,13 @@ const legalDocs = {
   privacy: {
     fr: `
       <h1>Politique de Confidentialité · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.8.0)</em></p>
+      <p><em>Dernière mise à jour : 14 novembre 2026 (Version 2.14.0)</em></p>
 
       <h2>1. Données Collectées</h2>
       <p>Chihiro [IA] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
       <ul>
         <li><strong>Identifiant Discord :</strong> Votre identifiant numérique Discord (User ID) est utilisé comme clé unique pour lier vos sauvegardes de jeu.</li>
-        <li><strong>État du Tamagotchi :</strong> Vos jauges d'Espoir et de Faim, votre solde de Monocoins, le statut d'activité (éveillé / endormi) et votre inventaire.</li>
+        <li><strong>État du Tamagotchi :</strong> Vos jauges d'Espoir, de Faim et de Désespoir, la propreté de la chambre (nombre de cacas et compteur de pas), votre solde de Monocoins, le statut d'activité (éveillé / endormi) et votre inventaire.</li>
         <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés, niveau, XP, titres, quêtes, capsules, duels, temps de recharge et scores hebdomadaires.</li>
         <li><strong>Discussion avec l'IA :</strong> Le texte de vos messages à Chihiro, votre pseudo et un court historique de la conversation (gardé en mémoire quelques heures au maximum).</li>
         <li><strong>Données de Courrier :</strong> Les messages reçus ou envoyés via le système <code>/mail</code>, ainsi que les pièces jointes (objets / Monocoins). Les notes de mise à jour du bot sont aussi déposées dans la boîte <code>/mail</code> de chaque joueur (jamais en message privé Discord).</li>
@@ -343,13 +343,13 @@ const legalDocs = {
     `,
     en: `
       <h1>Privacy Policy · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 13, 2026 (Version 2.8.0)</em></p>
+      <p><em>Last Updated: November 14, 2026 (Version 2.14.0)</em></p>
 
       <h2>1. Collected Data</h2>
       <p>Chihiro [AI] is a persistent bot. To function, it only stores the data strictly necessary for game progression linked to your Discord account:</p>
       <ul>
         <li><strong>Discord User ID:</strong> Your numerical Discord ID is used as a unique primary key to bind your game saves.</li>
-        <li><strong>Tamagotchi State:</strong> Your Hope & Hunger gauges, Monocoins balance, activity status (awake / asleep), and inventory items.</li>
+        <li><strong>Tamagotchi State:</strong> Your Hope, Hunger & Despair gauges, room cleanliness (poop count and step counter), Monocoins balance, activity status (awake / asleep), and inventory items.</li>
         <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, level, XP, titles, quests, capsules, duels, cooldowns and weekly scores.</li>
         <li><strong>AI Chat:</strong> The text of your messages to Chihiro, your display name and a short conversation history (kept in memory for a few hours at most).</li>
         <li><strong>Mailbox Data:</strong> Messages received or sent through the <code>/mail</code> system, including attached gifts and Monocoins. The bot's update notes are also placed in every player's <code>/mail</code> box (never sent as Discord direct messages).</li>
@@ -387,7 +387,7 @@ const legalDocs = {
 
       <h2>Fonctionnalités Clés</h2>
       <ul>
-        <li><strong>Tamagotchi Persistant :</strong> Nourrissez votre Chihiro, mettez-le au lit et veillez sur ses jauges d'Espoir et de Faim.</li>
+        <li><strong>Tamagotchi Persistant :</strong> Nourrissez votre Chihiro, mettez-le au lit, nettoyez sa chambre et veillez sur ses jauges d'Espoir, de Faim et de Désespoir.</li>
         <li><strong>Dashboard e-Handbook v2 :</strong> Avec la commande racine <code>/chihiro</code>, accédez instantanément à toutes les commandes majeures sans retenir de syntaxes compliquées.</li>
         <li><strong>Mini-Jeux Danganronpa :</strong> Débats Non-Stop, duels de réfutation, pendu et morpion contre Chiaki Nanami.</li>
         <li><strong>Économie & Collection :</strong> Gagnez des Monocoins, attrapez des dizaines d'espèces de poissons au Lac de l'Espoir (dont de rares poissons chromatiques) et tentez votre chance à la Machine MonoMono.</li>
@@ -410,7 +410,7 @@ const legalDocs = {
 
       <h2>Key Features</h2>
       <ul>
-        <li><strong>Persistent Tamagotchi:</strong> Feed your Chihiro, put him to bed, and nurture his Hope & Hunger gauges.</li>
+        <li><strong>Persistent Tamagotchi:</strong> Feed your Chihiro, put him to bed, clean his room, and nurture his Hope, Hunger & Despair gauges.</li>
         <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 8 fast shortcuts.</li>
         <li><strong>Danganronpa Mini-Games:</strong> Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, and Tic-Tac-Toe against Chiaki Nanami.</li>
         <li><strong>Economy & Collecting:</strong> Earn Monocoins, fish unique species in the Lake of Hope (including rare chromatic fish) and try your luck at the MonoMono Machine.</li>
@@ -566,7 +566,7 @@ const i18nTexts = {
   "features_title": { fr: "Une immersion complète dans l'Espoir", en: "Complete immersion in Hope" },
   "features_desc": { fr: "Développé pour apporter l'ambiance authentique de Kibougamine avec une interface ultra-moderne.", en: "Built to bring the authentic Hope's Peak vibe with state-of-the-art Discord components." },
   "feat1_title": { fr: "e-Handbook & Tamagotchi", en: "e-Handbook & Tamagotchi" },
-  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 8 shortcuts, Hope/Hunger gauges, character themes, and custom V2 profile cards." },
+  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim/Désespoir, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 8 shortcuts, Hope/Hunger/Despair gauges, character themes, and custom V2 profile cards." },
   "feat2_title": { fr: "Mini-Jeux & Débats de Classe", en: "Class Trials & Mini-Games" },
   "feat2_desc": { fr: "Défiez Monokuma en Débat Non-Stop, duel de réfutation, jeu du pendu ou morpion contre Chiaki Nanami.", en: "Battle Monokuma in Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, or Tic-Tac-Toe against Chiaki Nanami." },
   "feat3_title": { fr: "Lac de l'Espoir & Capsules", en: "Lake of Hope & Capsules" },

@@ -1,15 +1,15 @@
 # 🇫🇷 Politique de Confidentialité — Chihiro [IA]
 
-_Dernière mise à jour : 12 novembre 2026_
+_Dernière mise à jour : 14 novembre 2026_
 
 ## Quelles données collectons-nous ?
 
 Chihiro \[IA] est un bot persistant. Pour fonctionner, il a besoin de sauvegarder certaines informations liées à votre compte Discord :
 
 - **Informations d'identification Discord :** Votre ID Discord d'utilisateur est utilisé comme clé unique pour lier toutes vos données de jeu.
-- **Données du Tamagotchi :** L'état actuel de votre Chihiro, incluant vos jauges (Espoir, Faim), vos Monocoins, votre statut (éveillé/endormi) et votre inventaire.
+- **Données du Tamagotchi :** L'état actuel de votre Chihiro, incluant vos jauges (Espoir, Faim, Désespoir), la propreté de sa chambre (nombre de cacas et compteur de pas), vos Monocoins, votre statut (éveillé/endormi) et votre inventaire.
 - **Données de Progression :** Vos statistiques à long terme, comme le nombre de morts de Chihiro, votre maximum de Monocoins, et vos scores (parties jouées/gagnées) dans les mini-jeux.
-- **Données de Courrier :** Le contenu des messages, les sujets, et les informations sur les pièces jointes (objets/Monocoins) que vous envoyez via la commande `/mail write`.
+- **Données de Courrier :** Le contenu des messages, les sujets, et les informations sur les pièces jointes (objets/Monocoins) que vous envoyez via la commande `/mail write`. Les notes de mise à jour du bot sont aussi déposées dans votre boîte `/mail` (jamais en message privé Discord).
 - **Données d'Utilisation :** Le bot enregistre les erreurs et l'utilisation des commandes pour le débogage. Ces logs peuvent inclure votre ID utilisateur pour nous aider à résoudre les problèmes.
 
 ## Comment vos données sont-elles stockées et sécurisées ?
@@ -20,7 +20,7 @@ Toutes les données sont stockées dans une base de données locale (`chihiro.db
 
 **Personne, sauf pour la discussion avec l'IA.** Les données du jeu restent exclusivement dans l'écosystème du bot.
 
-Quand vous discutez avec Chihiro (`/chat`, mention ou réponse à l'un de ses messages), le texte de votre message, votre pseudo et un court historique de la conversation sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.
+Quand vous discutez avec Chihiro (`/chat`, mention ou réponse à l'un de ses messages), le texte de votre message (les mentions y sont remplacées par les pseudos des personnes, rôles et salons cités), votre pseudo et un court historique de la conversation sont envoyés à un fournisseur d'IA tiers (Groq, Google Gemini, OpenRouter ou Pollinations) pour générer la réponse. Ces échanges sont aussi enregistrés dans un salon privé du développeur pour la modération et le débogage. N'envoyez aucune information personnelle à l'IA.
 
 ## Quels sont vos droits sur vos données ?
 
@@ -41,16 +41,16 @@ _En ajoutant et en utilisant le bot Chihiro [IA], vous consentez à la collecte 
 
 # 🇺🇸 Privacy Policy — Chihiro [AI]
 
-_Last Updated: November 12, 2026_
+_Last Updated: November 14, 2026_
 
 ## What data do we collect?
 
 Chihiro [AI] is a persistent bot. To function, it needs to save certain information linked to your Discord account:
 
 - **Discord Identification Information:** Your Discord User ID is used as a unique key to link all your game data.
-- **Tamagotchi Data:** The current state of your Chihiro, including your gauges (Hope, Hunger), your Monocoins, your status (awake/asleep), and your inventory.
+- **Tamagotchi Data:** The current state of your Chihiro, including your gauges (Hope, Hunger, Despair), the cleanliness of the room (poop count and step counter), your Monocoins, your status (awake/asleep), and your inventory.
 - **Progression Data:** Your long-term statistics, such as Chihiro's death count, your maximum Monocoins, and your scores (games played/won) in mini-games.
-- **Mail Data:** The content of messages, subjects, and information about attachments (items/Monocoins) that you send via the `/mail write` command.
+- **Mail Data:** The content of messages, subjects, and information about attachments (items/Monocoins) that you send via the `/mail write` command. The bot's update notes are also placed in your `/mail` box (never sent as Discord direct messages).
 - **Usage Data:** The bot logs errors and command usage for debugging purposes. These logs may include your user ID to help us resolve issues.
 
 ## How is your data stored and secured?
@@ -61,7 +61,7 @@ All data is stored in a local database (`chihiro.db`) located on the private ser
 
 **Nobody, except for chatting with the AI.** Game data remains exclusively within the bot's ecosystem.
 
-When you chat with Chihiro (`/chat`, a mention or a reply to one of her messages), the text of your message, your display name and a short conversation history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.
+When you chat with Chihiro (`/chat`, a mention or a reply to one of his messages), the text of your message (mentions are replaced by the names of the people, roles and channels you mention), your display name and a short conversation history are sent to a third-party AI provider (Groq, Google Gemini, OpenRouter or Pollinations) to generate the reply. These exchanges are also logged in a private developer channel for moderation and debugging. Do not send any personal information to the AI.
 
 ## What are your rights over your data?
 
