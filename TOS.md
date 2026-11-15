@@ -1,16 +1,16 @@
-# 🇫🇷 Conditions d'Utilisation — Chihiro [IA]
+# 🇫🇷 Conditions d'Utilisation · Chihiro [AI]
 
 _Dernière mise à jour : 12 novembre 2026_
 
 ## 1\. Acceptation des Conditions
 
-En invitant ou en interagissant avec le bot Discord "Chihiro \[IA]", vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la [Politique de Confidentialité](https://github.com/Kitsoune/Chihiro-IA-Discord-Bot/blob/main/PRIVACY.md) associée. Vous acceptez également de respecter les [Conditions d'Utilisation de Discord](https://discord.com/terms).
+En invitant ou en interagissant avec le bot Discord "Chihiro \[AI]", vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la [Politique de Confidentialité](https://github.com/Kitsoune/Chihiro-IA-Discord-Bot/blob/main/PRIVACY.md) associée. Vous acceptez également de respecter les [Conditions d'Utilisation de Discord](https://discord.com/terms).
 
 Si vous n'êtes pas d'accord avec l'une de ces conditions, veuillez cesser d'utiliser le bot et le retirer de votre serveur.
 
 ## 2\. Licence d'Utilisation
 
-Chihiro \[IA] est un projet de fan non officiel fourni "tel quel", à des fins de divertissement.
+Chihiro \[AI] est un projet de fan non officiel fourni "tel quel", à des fins de divertissement.
 
 - **Usage Autorisé :** L'utilisation du bot se limite à ses fonctionnalités prévues (Tamagotchi, mini-jeux, courrier, etc.).
 - **Usage Interdit :** Il est interdit d'exploiter des bugs, d'abuser des commandes pour nuire au service, ou d'utiliser le bot à des fins malveillantes ou commerciales.
@@ -20,7 +20,7 @@ Chihiro \[IA] est un projet de fan non officiel fourni "tel quel", à des fins d
 
 - **Disponibilité :** Le bot est hébergé sur une infrastructure privée. Aucune garantie de disponibilité 24/7 n'est offerte. Des interruptions pour maintenance ou des pannes peuvent survenir.
 - **Droit de Résiliation (par le Développeur) :** Nous nous réservons le droit de suspendre ou de révoquer l'accès au bot à tout utilisateur ou serveur qui ne respecterait pas ces conditions, et ce, sans préavis.
-- **Arrêt du Projet :** Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro \[IA] à tout moment, de manière permanente et sans préavis.
+- **Arrêt du Projet :** Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro \[AI] à tout moment, de manière permanente et sans préavis.
 
 ## 4\. Intelligence Artificielle
 

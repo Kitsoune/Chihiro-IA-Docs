@@ -1,13 +1,14 @@
-# 🇫🇷 Politique de Confidentialité — Chihiro [IA]
+# 🇫🇷 Politique de Confidentialité · Chihiro [AI]
 
-_Dernière mise à jour : 14 novembre 2026_
+_Dernière mise à jour : 15 novembre 2026_
 
 ## Quelles données collectons-nous ?
 
-Chihiro \[IA] est un bot persistant. Pour fonctionner, il a besoin de sauvegarder certaines informations liées à votre compte Discord :
+Chihiro \[AI] est un bot persistant. Pour fonctionner, il a besoin de sauvegarder certaines informations liées à votre compte Discord :
 
 - **Informations d'identification Discord :** Votre ID Discord d'utilisateur est utilisé comme clé unique pour lier toutes vos données de jeu.
 - **Données du Tamagotchi :** L'état actuel de votre Chihiro, incluant vos jauges (Espoir, Faim, Désespoir), la propreté de sa chambre (nombre de cacas et compteur de pas), vos Monocoins, votre statut (éveillé/endormi) et votre inventaire.
+- **Données du Mode École :** L'énergie et les tâches de vos camarades, les matériaux, outils et objets fabriqués, la propreté de l'école, les Monokuma de secours construits, les tickets de voyage et les cœurs des bulletins.
 - **Données de Progression :** Vos statistiques à long terme, comme le nombre de morts de Chihiro, votre maximum de Monocoins, et vos scores (parties jouées/gagnées) dans les mini-jeux.
 - **Données de Courrier :** Le contenu des messages, les sujets, et les informations sur les pièces jointes (objets/Monocoins) que vous envoyez via la commande `/mail write`. Les notes de mise à jour du bot sont aussi déposées dans votre boîte `/mail` (jamais en message privé Discord).
 - **Données d'Utilisation :** Le bot enregistre les erreurs et l'utilisation des commandes pour le débogage. Ces logs peuvent inclure votre ID utilisateur pour nous aider à résoudre les problèmes.
@@ -37,11 +38,11 @@ Si vous avez la moindre question sur cette politique de confidentialité ou si v
 
 ---
 
-_En ajoutant et en utilisant le bot Chihiro [IA], vous consentez à la collecte et à l'utilisation de vos données comme décrit dans cette politique._
+_En ajoutant et en utilisant le bot Chihiro [AI], vous consentez à la collecte et à l'utilisation de vos données comme décrit dans cette politique._
 
 # 🇺🇸 Privacy Policy — Chihiro [AI]
 
-_Last Updated: November 14, 2026_
+_Last Updated: November 15, 2026_
 
 ## What data do we collect?
 
@@ -49,6 +50,7 @@ Chihiro [AI] is a persistent bot. To function, it needs to save certain informat
 
 - **Discord Identification Information:** Your Discord User ID is used as a unique key to link all your game data.
 - **Tamagotchi Data:** The current state of your Chihiro, including your gauges (Hope, Hunger, Despair), the cleanliness of the room (poop count and step counter), your Monocoins, your status (awake/asleep), and your inventory.
+- **School Mode Data:** Your classmates' energy and tasks, gathered materials, tools and crafted items, the school's cleanliness, the Monokuma backups you built, Trip Tickets and report card hearts.
 - **Progression Data:** Your long-term statistics, such as Chihiro's death count, your maximum Monocoins, and your scores (games played/won) in mini-games.
 - **Mail Data:** The content of messages, subjects, and information about attachments (items/Monocoins) that you send via the `/mail write` command. The bot's update notes are also placed in your `/mail` box (never sent as Discord direct messages).
 - **Usage Data:** The bot logs errors and command usage for debugging purposes. These logs may include your user ID to help us resolve issues.

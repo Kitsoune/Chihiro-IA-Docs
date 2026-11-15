@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CHIHIRO [IA] — Interactive Logic & Documentation Engine
+   CHIHIRO [AI] · Interactive Logic & Documentation Engine
    ========================================================================== */
 
 // State
@@ -35,8 +35,8 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
-      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Mini-games started from here open in the same message, with a Back button at the end of the game."
+      fr: "Ouvre l'e-Handbook interactif avec les 9 raccourcis rapides (profil, jeux, boutique, Mode École, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 9 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
@@ -56,11 +56,19 @@ const commandsData = [
     }
   },
   {
+    name: "/ecole",
+    category: "tamagotchi",
+    desc: {
+      fr: "Le Mode École de Danganronpa 1 : envoie tes camarades 2 h dans 10 salles récolter de vrais matériaux, ou 1 h faire le ménage. Sous 25 % de propreté, Monokuma confisque la moitié des récoltes. Fabrique pièces, outils et en-cas à l'atelier, construis les 10 Monokuma de secours pour gagner Monocoins et tickets de voyage, puis emmène tes camarades en voyage pour remplir leurs bulletins.",
+      en: "Danganronpa 1's School Mode: send classmates to 10 rooms for 2 hours to gather real materials, or to clean for 1 hour. Below 25% cleanliness, Monokuma confiscates half of every haul. Craft parts, tools and snacks in the workshop, build the 10 Monokuma backups for Monocoins and Trip Tickets, then take classmates on trips to fill their report cards."
+    }
+  },
+  {
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 32 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
-      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 32 achievements and fish collection by rarity. Change your banner, colour and title from it."
+      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 35 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 35 achievements and fish collection by rarity. Change your banner, colour and title from it."
     }
   },
   {
@@ -203,8 +211,8 @@ const commandsData = [
     name: "/classement",
     category: "progression",
     desc: {
-      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (22 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès, cacas nettoyés...).",
-      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (22 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements, poop cleaned...)."
+      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (24 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès, cacas nettoyés, Monokuma de secours, bulletins...).",
+      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (24 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements, poop cleaned, Monokuma backups, report cards...)."
     }
   },
   {
@@ -237,15 +245,15 @@ const commandsData = [
 const legalDocs = {
   tos: {
     fr: `
-      <h1>Conditions d'Utilisation · Chihiro [IA]</h1>
+      <h1>Conditions d'Utilisation · Chihiro [AI]</h1>
       <p><em>Dernière mise à jour : 13 novembre 2026 (Version 2.8.0)</em></p>
 
       <h2>1. Acceptation des Conditions</h2>
-      <p>En invitant ou en interagissant avec le bot Discord <strong>"Chihiro [IA]"</strong>, vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la Politique de Confidentialité associée. Vous acceptez également de respecter les Conditions d'Utilisation officielles de Discord.</p>
+      <p>En invitant ou en interagissant avec le bot Discord <strong>"Chihiro [AI]"</strong>, vous reconnaissez avoir lu, compris et accepté l'intégralité de ces Conditions d'Utilisation, ainsi que la Politique de Confidentialité associée. Vous acceptez également de respecter les Conditions d'Utilisation officielles de Discord.</p>
       <p>Si vous n'êtes pas d'accord avec l'une de ces conditions, veuillez cesser d'utiliser le bot et le retirer de votre serveur.</p>
 
       <h2>2. Licence d'Utilisation & Règles du Jeu</h2>
-      <p>Chihiro [IA] est un projet de fan non officiel fourni "tel quel", à des fins de divertissement et d'apprentissage.</p>
+      <p>Chihiro [AI] est un projet de fan non officiel fourni "tel quel", à des fins de divertissement et d'apprentissage.</p>
       <ul>
         <li><strong>Usage Autorisé :</strong> L'utilisation du bot se limite à ses fonctionnalités de jeu prévues (Tamagotchi, mini-jeux, inventaire, courrier, etc.).</li>
         <li><strong>Usage Interdit :</strong> Il est strictement interdit d'exploiter des bugs, d'automatiser des requêtes (macro / auto-clicker) pour nuire au service ou fausser les classements, ou d'utiliser le bot à des fins malveillantes ou commerciales.</li>
@@ -256,7 +264,7 @@ const legalDocs = {
       <ul>
         <li><strong>Disponibilité :</strong> Le bot est hébergé sur une infrastructure privée. Aucune garantie de disponibilité 24/7 ininterrompue n'est offerte. Des interruptions pour maintenance ou pannes techniques peuvent survenir.</li>
         <li><strong>Droit de Résiliation :</strong> Nous nous réservons le droit de suspendre ou de révoquer l'accès au bot à tout utilisateur ou serveur qui violerait ces conditions, sans préavis.</li>
-        <li><strong>Arrêt du Projet :</strong> Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro [IA] à tout moment, de manière permanente et sans préavis.</li>
+        <li><strong>Arrêt du Projet :</strong> Le développeur se réserve le droit de cesser le développement, la maintenance ou l'hébergement du bot Chihiro [AI] à tout moment, de manière permanente et sans préavis.</li>
       </ul>
 
       <h2>4. Intelligence Artificielle</h2>
@@ -309,14 +317,15 @@ const legalDocs = {
   },
   privacy: {
     fr: `
-      <h1>Politique de Confidentialité · Chihiro [IA]</h1>
-      <p><em>Dernière mise à jour : 14 novembre 2026 (Version 2.14.0)</em></p>
+      <h1>Politique de Confidentialité · Chihiro [AI]</h1>
+      <p><em>Dernière mise à jour : 15 novembre 2026 (Version 2.16.0)</em></p>
 
       <h2>1. Données Collectées</h2>
-      <p>Chihiro [IA] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
+      <p>Chihiro [AI] est un jeu persistant. Pour fonctionner, il sauvegarde uniquement les informations nécessaires au gameplay associées à votre compte Discord :</p>
       <ul>
         <li><strong>Identifiant Discord :</strong> Votre identifiant numérique Discord (User ID) est utilisé comme clé unique pour lier vos sauvegardes de jeu.</li>
         <li><strong>État du Tamagotchi :</strong> Vos jauges d'Espoir, de Faim et de Désespoir, la propreté de la chambre (nombre de cacas et compteur de pas), votre solde de Monocoins, le statut d'activité (éveillé / endormi) et votre inventaire.</li>
+        <li><strong>Mode École :</strong> L'énergie et les tâches de vos camarades, les matériaux, outils et objets fabriqués, la propreté de l'école, les Monokuma de secours construits, les tickets de voyage et les cœurs des bulletins.</li>
         <li><strong>Statistiques de Progression :</strong> Vos scores de mini-jeux (parties jouées / victoires), succès débloqués, poissons pêchés, niveau, XP, titres, quêtes, capsules, duels, temps de recharge et scores hebdomadaires.</li>
         <li><strong>Discussion avec l'IA :</strong> Le texte de vos messages à Chihiro, votre pseudo et un court historique de la conversation (gardé en mémoire quelques heures au maximum).</li>
         <li><strong>Données de Courrier :</strong> Les messages reçus ou envoyés via le système <code>/mail</code>, ainsi que les pièces jointes (objets / Monocoins). Les notes de mise à jour du bot sont aussi déposées dans la boîte <code>/mail</code> de chaque joueur (jamais en message privé Discord).</li>
@@ -343,13 +352,14 @@ const legalDocs = {
     `,
     en: `
       <h1>Privacy Policy · Chihiro [AI]</h1>
-      <p><em>Last Updated: November 14, 2026 (Version 2.14.0)</em></p>
+      <p><em>Last Updated: November 15, 2026 (Version 2.16.0)</em></p>
 
       <h2>1. Collected Data</h2>
       <p>Chihiro [AI] is a persistent bot. To function, it only stores the data strictly necessary for game progression linked to your Discord account:</p>
       <ul>
         <li><strong>Discord User ID:</strong> Your numerical Discord ID is used as a unique primary key to bind your game saves.</li>
         <li><strong>Tamagotchi State:</strong> Your Hope, Hunger & Despair gauges, room cleanliness (poop count and step counter), Monocoins balance, activity status (awake / asleep), and inventory items.</li>
+        <li><strong>School Mode:</strong> Your classmates' energy and tasks, gathered materials, tools and crafted items, the school's cleanliness, the Monokuma backups you built, Trip Tickets and report card hearts.</li>
         <li><strong>Progression Statistics:</strong> Mini-game records (games played / won), unlocked achievements, fishing bestiary entries, level, XP, titles, quests, capsules, duels, cooldowns and weekly scores.</li>
         <li><strong>AI Chat:</strong> The text of your messages to Chihiro, your display name and a short conversation history (kept in memory for a few hours at most).</li>
         <li><strong>Mailbox Data:</strong> Messages received or sent through the <code>/mail</code> system, including attached gifts and Monocoins. The bot's update notes are also placed in every player's <code>/mail</code> box (never sent as Discord direct messages).</li>
@@ -377,9 +387,9 @@ const legalDocs = {
   },
   readme: {
     fr: `
-      <h1>Documentation Officielle · Chihiro [IA] v2.6.0</h1>
+      <h1>Documentation Officielle · Chihiro [AI] v2.6.0</h1>
       <blockquote>
-        <strong>Danganronpa Fan Project :</strong> Chihiro [IA] est un bot Discord d'apprentissage et de divertissement inspiré du chef-d'œuvre de Spike Chunsoft.
+        <strong>Danganronpa Fan Project :</strong> Chihiro [AI] est un bot Discord d'apprentissage et de divertissement inspiré du chef-d'œuvre de Spike Chunsoft.
       </blockquote>
 
       <h2>Introduction</h2>
@@ -391,6 +401,7 @@ const legalDocs = {
         <li><strong>Dashboard e-Handbook v2 :</strong> Avec la commande racine <code>/chihiro</code>, accédez instantanément à toutes les commandes majeures sans retenir de syntaxes compliquées.</li>
         <li><strong>Mini-Jeux Danganronpa :</strong> Débats Non-Stop, duels de réfutation, pendu et morpion contre Chiaki Nanami.</li>
         <li><strong>Économie & Collection :</strong> Gagnez des Monocoins, attrapez des dizaines d'espèces de poissons au Lac de l'Espoir (dont de rares poissons chromatiques) et tentez votre chance à la Machine MonoMono.</li>
+        <li><strong>Mode École :</strong> Envoyez vos camarades récolter des matériaux dans 10 salles du Pic de l'Espoir, gardez l'école propre, fabriquez outils et pièces et construisez les 10 Monokuma de secours du School Mode.</li>
         <li><strong>Progression :</strong> Niveaux, XP, titres, prestige, quêtes quotidiennes, objectif commun hebdomadaire, classement de la semaine, Happy Hour quotidienne, roue de Monokuma, codes cadeaux et week-ends ×2 XP.</li>
         <li><strong>Discussion IA :</strong> Parlez avec Chihiro dans votre langue. Les réponses sont générées par une IA tierce et filtrées contre les contenus sexuels et les insultes.</li>
         <li><strong>Boîte Mail Components V2 :</strong> Une messagerie Discord ultra soignée avec des conteneurs interactifs pour envoyer des lettres et des cadeaux.</li>
@@ -411,9 +422,10 @@ const legalDocs = {
       <h2>Key Features</h2>
       <ul>
         <li><strong>Persistent Tamagotchi:</strong> Feed your Chihiro, put him to bed, clean his room, and nurture his Hope, Hunger & Despair gauges.</li>
-        <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 8 fast shortcuts.</li>
+        <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 9 fast shortcuts.</li>
         <li><strong>Danganronpa Mini-Games:</strong> Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, and Tic-Tac-Toe against Chiaki Nanami.</li>
         <li><strong>Economy & Collecting:</strong> Earn Monocoins, fish unique species in the Lake of Hope (including rare chromatic fish) and try your luck at the MonoMono Machine.</li>
+        <li><strong>School Mode:</strong> Send classmates to gather materials in 10 Hope's Peak rooms, keep the school clean, craft tools and parts, and build the 10 Monokuma backups from School Mode.</li>
         <li><strong>Progression:</strong> Levels, XP, titles, prestige, daily quests, a weekly community goal, a weekly leaderboard, a daily Happy Hour, Monokuma's wheel, gift codes and ×2 XP weekends.</li>
         <li><strong>AI Chat:</strong> Talk with Chihiro in your language. Replies are generated by a third-party AI and filtered against sexual content and insults.</li>
         <li><strong>Components V2 Mailbox:</strong> A clean, modern messaging interface designed with Discord's latest Components V2 containers.</li>
@@ -566,7 +578,7 @@ const i18nTexts = {
   "features_title": { fr: "Une immersion complète dans l'Espoir", en: "Complete immersion in Hope" },
   "features_desc": { fr: "Développé pour apporter l'ambiance authentique de Kibougamine avec une interface ultra-moderne.", en: "Built to bring the authentic Hope's Peak vibe with state-of-the-art Discord components." },
   "feat1_title": { fr: "e-Handbook & Tamagotchi", en: "e-Handbook & Tamagotchi" },
-  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim/Désespoir, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 8 shortcuts, Hope/Hunger/Despair gauges, character themes, and custom V2 profile cards." },
+  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 9 raccourcis rapides, jauges d'Espoir/Faim/Désespoir, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 9 shortcuts, Hope/Hunger/Despair gauges, character themes, and custom V2 profile cards." },
   "feat2_title": { fr: "Mini-Jeux & Débats de Classe", en: "Class Trials & Mini-Games" },
   "feat2_desc": { fr: "Défiez Monokuma en Débat Non-Stop, duel de réfutation, jeu du pendu ou morpion contre Chiaki Nanami.", en: "Battle Monokuma in Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, or Tic-Tac-Toe against Chiaki Nanami." },
   "feat3_title": { fr: "Lac de l'Espoir & Capsules", en: "Lake of Hope & Capsules" },
@@ -594,10 +606,10 @@ const i18nTexts = {
   "footer_nav": { fr: "Navigation", en: "Navigation" },
   "footer_community": { fr: "Communauté", en: "Community" },
   "footer_dev": { fr: "Développeur", en: "Developer" },
-  "footer_copy": { fr: "© 2026 Chihiro [IA] — Développé avec Espoir par KITS Progress Inc.", en: "© 2026 Chihiro [AI] — Developed with Hope by KITS Progress Inc." },
+  "footer_copy": { fr: "© 2026 Chihiro [AI] · Développé avec Espoir par KITS Progress Inc.", en: "© 2026 Chihiro [AI] — Developed with Hope by KITS Progress Inc." },
   "footer_host": { fr: "Hébergé fièrement sur GitHub Pages.", en: "Proudly hosted on GitHub Pages." },
   "disclaimer": {
-    fr: "⚠️ <strong>Avertissement Fan Project :</strong> Chihiro [IA] est un projet de fan à but non lucratif créé à des fins d'apprentissage et de divertissement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les noms, personnages, sprites et univers appartiennent exclusivement à leurs ayants droit respectifs.",
+    fr: "⚠️ <strong>Avertissement Fan Project :</strong> Chihiro [AI] est un projet de fan à but non lucratif créé à des fins d'apprentissage et de divertissement. Il n'est en aucun cas affilié à <strong>Spike Chunsoft Co., Ltd.</strong> Tous les noms, personnages, sprites et univers appartiennent exclusivement à leurs ayants droit respectifs.",
     en: "⚠️ <strong>Fan Project Disclaimer:</strong> Chihiro [AI] is an unofficial non-profit fan project created for learning and entertainment purposes. It is in no way affiliated with <strong>Spike Chunsoft Co., Ltd.</strong> All names, characters, sprites, and assets belong exclusively to their respective rights holders."
   },
 };

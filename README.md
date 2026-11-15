@@ -1,6 +1,6 @@
-# 🇫🇷 Documentation pour Chihiro [IA] (v2.0.0)
+# 🇫🇷 Documentation pour Chihiro [AI] (v2.0.0)
 
-Bienvenue sur le dépôt de documentation et documents légaux publics associés au bot Discord **Chihiro [IA]** (Alter Ego v2.0.0).
+Bienvenue sur le dépôt de documentation et documents légaux publics associés au bot Discord **Chihiro [AI]** (Alter Ego v2.0.0).
 
 🌐 **Site Web Officiel & Documentation :** [https://kitsoune.github.io/Chihiro-IA-Docs/](https://kitsoune.github.io/Chihiro-IA-Docs/)
 
