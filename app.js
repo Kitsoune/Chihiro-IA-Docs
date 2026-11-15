@@ -35,8 +35,8 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 9 raccourcis rapides (profil, jeux, boutique, Mode École, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
-      en: "Opens the interactive e-Handbook dashboard with 9 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Mini-games started from here open in the same message, with a Back button at the end of the game."
+      fr: "Ouvre l'e-Handbook interactif avec les 9 raccourcis rapides (profil, jeux, boutique, Mode École, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 9 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
@@ -67,8 +67,8 @@ const commandsData = [
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 35 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
-      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 35 achievements and fish collection by rarity. Change your banner, colour and title from it."
+      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 36 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 36 achievements and fish collection by rarity. Change your banner, colour and title from it."
     }
   },
   {
@@ -211,8 +211,8 @@ const commandsData = [
     name: "/classement",
     category: "progression",
     desc: {
-      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (24 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès, cacas nettoyés, Monokuma de secours, bulletins...).",
-      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (24 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements, poop cleaned, Monokuma backups, report cards...)."
+      fr: "Écran de classement avec podium, avatars et titres, ta position même hors du top 10, plusieurs pages et un menu pour changer de classement (25 classements : XP de la semaine récompensée chaque lundi, niveau, Monocoins, pêche, mini-jeux, duels, succès, cacas nettoyés, Monokuma de secours, bulletins, Monokuma cachés...).",
+      en: "Ranking screen with a podium, avatars and titles, your own position even outside the top 10, pages and a menu to switch rankings (25 rankings: weekly XP rewarded every Monday, level, Monocoins, fishing, mini-games, duels, achievements, poop cleaned, Monokuma backups, report cards, hidden Monokumas...)."
     }
   },
   {
