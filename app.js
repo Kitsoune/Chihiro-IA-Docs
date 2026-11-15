@@ -35,8 +35,8 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). L'onglet mini-jeux contient aussi la pêche et le Mode École. La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
-      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The mini-games tab also holds fishing and School Mode. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
+      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). L'onglet mini-jeux contient aussi la pêche et le Mode École. La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Nettoyer rapporte aussi des Monocoins, et tu ne peux nettoyer que s'il y a des cacas. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The mini-games tab also holds fishing and School Mode. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Cleaning also earns Monocoins, and you can only clean when there is poop. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
@@ -67,8 +67,8 @@ const commandsData = [
     name: "/profil afficher",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 36 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
-      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 36 achievements and fish collection by rarity. Change your banner, colour and title from it."
+      fr: "Ouvre ton dossier d'élève en images : carte d'étudiant, écran de statistiques, bilan des mini-jeux, mur des 41 succès et collection de poissons par rareté. Modifie ta bannière, ta couleur et ton titre depuis le dossier.",
+      en: "Opens your illustrated student file: ID card, stats screen, mini-game records, wall of 41 achievements and fish collection by rarity. Change your banner, colour and title from it."
     }
   },
   {
