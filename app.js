@@ -195,8 +195,8 @@ const commandsData = [
     name: "/prestige",
     category: "progression",
     desc: {
-      fr: "Au niveau 50, remets ton niveau à 1 contre un bonus d'XP permanent.",
-      en: "At level 50, reset your level to 1 for a permanent XP bonus."
+      fr: "Au niveau 50, remets ton niveau à 1 contre un bonus d'XP permanent (+10 % par prestige, jusqu'à +30 %).",
+      en: "At level 50, reset your level to 1 for a permanent XP bonus (+10% per prestige, up to +30%)."
     }
   },
   {
