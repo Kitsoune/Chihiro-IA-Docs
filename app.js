@@ -35,8 +35,8 @@ const commandsData = [
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 9 raccourcis rapides (profil, jeux, boutique, Mode École, etc.). La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
-      en: "Opens the interactive e-Handbook dashboard with 9 quick shortcuts. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
+      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). L'onglet mini-jeux contient aussi la pêche et le Mode École. La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The mini-games tab also holds fishing and School Mode. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
@@ -139,16 +139,24 @@ const commandsData = [
     name: "/peche lancer",
     category: "fishing",
     desc: {
-      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher parmi 50 espèces (65 % commun, 25 % rare, 9 % épique, 1 % légendaire), avec 1 chance sur 500 d'un poisson chromatique.",
-      en: "Cast your fishing rod into the Lake of Hope to catch one of 50 species (65% common, 25% rare, 9% epic, 1% legendary), with a 1 in 500 chance of a chromatic fish."
+      fr: "Lance ta ligne dans le lac de Kibougamine pour pêcher parmi 50 espèces (65 % commun, 25 % rare, 9 % épique, 1 % légendaire), avec 1 chance sur 500 d'un poisson chromatique. Aussi dans l'onglet mini-jeux de /chihiro, avec un bouton Relancer.",
+      en: "Cast your fishing rod into the Lake of Hope to catch one of 50 species (65% common, 25% rare, 9% epic, 1% legendary), with a 1 in 500 chance of a chromatic fish. Also in the mini-games tab of /chihiro, with a Cast again button."
+    }
+  },
+  {
+    name: "/peche echange",
+    category: "fishing",
+    desc: {
+      fr: "Ouvre une fenêtre d'échange en direct à deux colonnes avec un joueur : chacun ajoute jusqu'à 6 poissons et des Monocoins de son côté, tout se met à jour en temps réel, et l'échange se fait seulement quand les deux appuient sur Prêt.",
+      en: "Opens a live two-column trade window with another player: each adds up to 6 fish and some Monocoins on their side, everything updates in real time, and the trade only happens when both press Ready."
     }
   },
   {
     name: "/peche bestiaire",
     category: "fishing",
     desc: {
-      fr: "Consulte le guide encyclopédique de tous les poissons répertoriés.",
-      en: "View your fishing encyclopedia and discovery progress."
+      fr: "Ta collection de poissons, une page par rareté comme dans ton profil, avec un menu pour ouvrir la fiche record de chaque espèce attrapée.",
+      en: "Your fish collection, one page per rarity like on your profile, with a menu to open the record card of every species you caught."
     }
   },
   {
@@ -422,7 +430,7 @@ const legalDocs = {
       <h2>Key Features</h2>
       <ul>
         <li><strong>Persistent Tamagotchi:</strong> Feed your Chihiro, put him to bed, clean his room, and nurture his Hope, Hunger & Despair gauges.</li>
-        <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 9 fast shortcuts.</li>
+        <li><strong>e-Handbook Dashboard v2:</strong> Use <code>/chihiro</code> to open a streamlined, interactive control panel with 8 fast shortcuts.</li>
         <li><strong>Danganronpa Mini-Games:</strong> Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, and Tic-Tac-Toe against Chiaki Nanami.</li>
         <li><strong>Economy & Collecting:</strong> Earn Monocoins, fish unique species in the Lake of Hope (including rare chromatic fish) and try your luck at the MonoMono Machine.</li>
         <li><strong>School Mode:</strong> Send classmates to gather materials in 10 Hope's Peak rooms, keep the school clean, craft tools and parts, and build the 10 Monokuma backups from School Mode.</li>
@@ -578,7 +586,7 @@ const i18nTexts = {
   "features_title": { fr: "Une immersion complète dans l'Espoir", en: "Complete immersion in Hope" },
   "features_desc": { fr: "Développé pour apporter l'ambiance authentique de Kibougamine avec une interface ultra-moderne.", en: "Built to bring the authentic Hope's Peak vibe with state-of-the-art Discord components." },
   "feat1_title": { fr: "e-Handbook & Tamagotchi", en: "e-Handbook & Tamagotchi" },
-  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 9 raccourcis rapides, jauges d'Espoir/Faim/Désespoir, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 9 shortcuts, Hope/Hunger/Despair gauges, character themes, and custom V2 profile cards." },
+  "feat1_desc": { fr: "Dashboard interactif /chihiro avec 8 raccourcis rapides, jauges d'Espoir/Faim/Désespoir, thèmes de personnages et cartes de profil V2.", en: "Interactive /chihiro dashboard with 8 shortcuts, Hope/Hunger/Despair gauges, character themes, and custom V2 profile cards." },
   "feat2_title": { fr: "Mini-Jeux & Débats de Classe", en: "Class Trials & Mini-Games" },
   "feat2_desc": { fr: "Défiez Monokuma en Débat Non-Stop, duel de réfutation, jeu du pendu ou morpion contre Chiaki Nanami.", en: "Battle Monokuma in Non-Stop Debates, Rebuttal Showdowns, Hangman's Gambit, or Tic-Tac-Toe against Chiaki Nanami." },
   "feat3_title": { fr: "Lac de l'Espoir & Capsules", en: "Lake of Hope & Capsules" },
