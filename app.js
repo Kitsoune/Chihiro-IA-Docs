@@ -99,8 +99,8 @@ const commandsData = [
     name: "/jeu morpion",
     category: "games",
     desc: {
-      fr: "Partie amicale de morpion contre Chiaki Nanami. Bouton Rejouer en fin de partie.",
-      en: "Friendly game of Tic-Tac-Toe against Chiaki Nanami. Play again button at the end of the game."
+      fr: "Morpion classé contre Chiaki Nanami : elle s'adapte à ton Elo (Bronze à Ultime) et retient les coups qui l'ont battue. Option adversaire pour défier un autre joueur.",
+      en: "Ranked Tic-Tac-Toe against Chiaki Nanami: she adapts to your Elo (Bronze to Ultimate) and remembers the moves that beat her. Opponent option to challenge another player."
     }
   },
   {
