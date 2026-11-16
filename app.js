@@ -32,6 +32,14 @@ const quotes = {
 // Full Command Database
 const commandsData = [
   {
+    name: "/help",
+    category: "tamagotchi",
+    desc: {
+      fr: "Affiche la liste de toutes les commandes de Chihiro, rangées par catégorie. Le même panneau s'ouvre avec le bouton ? de /a-propos.",
+      en: "Lists every Chihiro command, grouped by category. The same panel opens from the ? button in /about."
+    }
+  },
+  {
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
