@@ -35,16 +35,16 @@ const commandsData = [
     name: "/help",
     category: "tamagotchi",
     desc: {
-      fr: "Affiche la liste de toutes les commandes de Chihiro, rangées par catégorie. Le même panneau s'ouvre avec le bouton ? de /a-propos.",
-      en: "Lists every Chihiro command, grouped by category. The same panel opens from the ? button in /about."
+      fr: "Affiche la liste de toutes les commandes de Chihiro, rangées par catégorie, et une page « Comment ça marche » qui explique l'espoir, la faim, le sommeil, les cacas et le Désespoir, les cadeaux et le game over. Le même panneau s'ouvre avec le bouton ? de /a-propos.",
+      en: "Lists every Chihiro command, grouped by category, plus a \"How it works\" page explaining hope, hunger, sleep, poop and despair, gifts and game over. The same panel opens from the ? button in /about."
     }
   },
   {
     name: "/chihiro",
     category: "tamagotchi",
     desc: {
-      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). L'onglet mini-jeux contient aussi la pêche et le Mode École. La chambre se salit quand tu joues : nettoie les cacas avant que la jauge de Désespoir atteigne 10, sinon Chihiro meurt. Nettoyer rapporte aussi des Monocoins, et tu ne peux nettoyer que s'il y a des cacas et que Chihiro est réveillé. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
-      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The mini-games tab also holds fishing and School Mode. The room gets dirty as you play: clean up the poop before the Despair gauge reaches 10, or Chihiro dies. Cleaning also earns Monocoins, and you can only clean when there is poop and Chihiro is awake. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
+      fr: "Ouvre l'e-Handbook interactif avec les 8 raccourcis rapides (profil, jeux, boutique, etc.). L'onglet mini-jeux contient aussi la pêche et le Mode École. La chambre se salit quand tu joues : tant qu'il reste des cacas, la jauge de Désespoir monte. Nettoyer arrête la montée, mais seuls les cadeaux (objets qui ne se mangent pas) retirent des crânes. À 10 crânes, Chihiro meurt. Nettoyer rapporte aussi des Monocoins, et tu ne peux nettoyer que s'il y a des cacas et que Chihiro est réveillé. Un Monokuma se cache parfois dans la chambre : trouve le bon côté pour gagner 10 Monocoins (3 par jour, 30 à trouver). Les mini-jeux lancés d'ici s'ouvrent dans le même message, avec un bouton Retour en fin de partie.",
+      en: "Opens the interactive e-Handbook dashboard with 8 quick shortcuts. The mini-games tab also holds fishing and School Mode. The room gets dirty as you play: while poop is left, the Despair gauge rises. Cleaning stops it, but only gifts (items you can't eat) remove skulls. At 10 skulls, Chihiro dies. Cleaning also earns Monocoins, and you can only clean when there is poop and Chihiro is awake. Monokuma sometimes hides in the room: pick the right side to win 10 Monocoins (3 a day, 30 to find). Mini-games started from here open in the same message, with a Back button at the end of the game."
     }
   },
   {
